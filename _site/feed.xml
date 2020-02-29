@@ -6,9 +6,33 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Feb 2020 18:41:32 +0900</pubDate>
-    <lastBuildDate>Sat, 29 Feb 2020 18:41:32 +0900</lastBuildDate>
+    <pubDate>Sat, 29 Feb 2020 19:11:24 +0900</pubDate>
+    <lastBuildDate>Sat, 29 Feb 2020 19:11:24 +0900</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Why are my posts not showing in the front page?</title>
+        <description>&lt;h1 id=&quot;why-are-my-posts-not-showing-on-the-front-page&quot;&gt;Why are my posts not showing on the front page?&lt;/h1&gt; &lt;hr /&gt; &lt;blockquote&gt; &lt;p&gt;I wonder why my posts are not shown in the first page. I can see them...</description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/test/2020/02/29/test.html</link>
+        <guid isPermaLink="true">http://localhost:4000/test/2020/02/29/test.html</guid>
+        
+        <category>Test</category>
+        
+        <category>hello</category>
+        
+        <category>this</category>
+        
+        <category>is</category>
+        
+        <category>tag</category>
+        
+        <category>test</category>
+        
+        
+        <category>Test</category>
+        
+      </item>
     
       <item>
         <title>test DATE</title>
@@ -30,30 +54,6 @@
         <pubDate>Sat, 29 Feb 2020 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/test/2020/02/29/TEST2.html</link>
         <guid isPermaLink="true">http://localhost:4000/test/2020/02/29/TEST2.html</guid>
-        
-        <category>Test</category>
-        
-        <category>hello</category>
-        
-        <category>this</category>
-        
-        <category>is</category>
-        
-        <category>tag</category>
-        
-        <category>test</category>
-        
-        
-        <category>Test</category>
-        
-      </item>
-    
-      <item>
-        <title>test 789</title>
-        <description>&lt;blockquote&gt; &lt;p&gt;I wonder why my posts are not shown in the first page. I can see them through jekyll bundler in the local server but not in the real github...</description>
-        <pubDate>Wed, 19 Feb 2020 04:25:52 +0900</pubDate>
-        <link>http://localhost:4000/test/2020/02/19/test.html</link>
-        <guid isPermaLink="true">http://localhost:4000/test/2020/02/19/test.html</guid>
         
         <category>Test</category>
         
