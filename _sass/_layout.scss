@@ -451,3 +451,13 @@ pre code.hljs {
 		}
 	}
 }
+
+.fa-stack, .page-number {
+	color: rgb(161,50,50);
+	&:active,
+	&:focus,
+	&:hover {
+		color: darken(rgb(161,50,50), 10%);
+	}
+}
+
