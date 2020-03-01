@@ -6,13 +6,13 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Feb 2020 19:11:24 +0900</pubDate>
-    <lastBuildDate>Sat, 29 Feb 2020 19:11:24 +0900</lastBuildDate>
+    <pubDate>Sun, 01 Mar 2020 21:51:03 +0900</pubDate>
+    <lastBuildDate>Sun, 01 Mar 2020 21:51:03 +0900</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
-        <title>Why are my posts not showing in the front page?</title>
-        <description>&lt;h1 id=&quot;why-are-my-posts-not-showing-on-the-front-page&quot;&gt;Why are my posts not showing on the front page?&lt;/h1&gt; &lt;hr /&gt; &lt;blockquote&gt; &lt;p&gt;I wonder why my posts are not shown in the first page. I can see them...</description>
+        <title>Why are my posts not showing on the front page?</title>
+        <description>&lt;h1 id=&quot;why-are-my-posts-not-showing-on-the-front-page&quot;&gt;Why are my posts not showing on the front page?&lt;/h1&gt; &lt;h1&gt;—&lt;/h1&gt; &lt;blockquote&gt; &lt;p&gt;I wonder why my posts are not shown on the first page. I can see them through...</description>
         <pubDate>Sat, 29 Feb 2020 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/test/2020/02/29/test.html</link>
         <guid isPermaLink="true">http://localhost:4000/test/2020/02/29/test.html</guid>
