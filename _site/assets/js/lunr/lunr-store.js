@@ -5,6 +5,12 @@ var store = [{
         "url": "http://localhost:4000/blog/first-post/",
         "teaser": null
       },{
+        "title": "GBC 과제 1",
+        "excerpt":"GBC 과제 1 1. CVE란 무엇인가 CVE : ‘Common Vulnerabilities and Exposure’ 의 약자로 정보 보안 취약점 표준 코드를 뜻한다 현재까지 알려진 취약점을 식별하는 방식을 표준화하는 데 목적이 있는 코드이다 표기 방식은 “CVE-[취약점이 발견된 년도]-[취약점고유번호]”이다 최근 2년 내에 발견 된 CVE 2가지 예시 CVE-2019-0797(Win32k 권한 상승 취약점) : Kaspersky 보안...","categories": ["GBC"],
+        "tags": ["GBC"],
+        "url": "http://localhost:4000/gbc/gbc1/",
+        "teaser": null
+      },{
         "title": "용어 및 개념 정리",
         "excerpt":"**gcc: ** GNU Compiler Collection의 약자로 GNU 프로젝트의 일환으로 개발되어 널리 쓰이고 있는 컴파일러이다. 원래는 GNU C Compiler의 약자였지만 이후에 C++, JAVA, Fortran 등 여러 언어를 컴파일 할 수 있게 되면서 현재의 이름으로 바뀌게 되었다. **homebrew: ** 개발자들이 쉽게 프로그램을 검색, 설치, 삭제할 수 있게 해주는 맥 전용 패키지 매니저....","categories": ["Blog"],
         "tags": ["Blog"],
