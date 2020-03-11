@@ -1,0 +1,43 @@
+I"�<ul class="toc__menu">
+  <li><a href="#gbc-보안-과제-1">GBC 보안 과제 1</a>
+    <ul>
+      <li><a href="#1-cve란-무엇인가">1. CVE란 무엇인가</a>
+        <ul>
+          <li><a href="#cve--common-vulnerabilities-and-exposure-의-약자로-정보-보안-취약점-표준-코드를-뜻한다">CVE : ‘Common Vulnerabilities and Exposure’ 의 약자로 정보 보안 취약점 표준 코드를 뜻한다</a>
+            <ul>
+              <li><a href="#현재까지-알려진-취약점을-식별하는-방식을-표준화하는-데-목적이-있는-코드이다">현재까지 알려진 취약점을 식별하는 방식을 표준화하는 데 목적이 있는 코드이다</a></li>
+              <li><a href="#표기-방식은-cve-취약점이-발견된-년도-취약점고유번호이다">표기 방식은 “CVE-[취약점이 발견된 년도]-[취약점고유번호]”이다</a></li>
+              <li><a href="#최근-2년-내에-발견-된-cve-2가지-예시">최근 2년 내에 발견 된 CVE 2가지 예시</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#2-프로그램의-결함">2. 프로그램의 결함</a>
+        <ul>
+          <li><a href="#cwe--cve를-관리하는-mitre의-프로젝트로-common-weakness-enumeration의-약자이다">CWE : CVE를 관리하는 MITRE의 프로젝트로 ‘Common Weakness Enumeration’의 약자이다</a>
+            <ul>
+              <li><a href="#일반적으로-널리-통용되는-주요-취약점-보안상의-문제들을-나열하여-정리하는-역할을-한다">일반적으로 널리 통용되는 주요 취약점, 보안상의 문제들을 나열하여 정리하는 역할을 한다</a></li>
+              <li><a href="#cve가-취약점-정의-역할을-한다면-cwe는-애플리케이션-보안-취약점에-대한-카테고리-정리를-목표로-한다">CVE가 취약점 정의 역할을 한다면 CWE는 애플리케이션 보안 취약점에 대한 카테고리 정리를 목표로 한다</a></li>
+              <li><a href="#표기-방식은-cwe-보안약점고유번호이다">표기 방식은 “CWE-[보안약점고유번호]”이다</a></li>
+              <li><a href="#cwe의-예시">CWE의 예시</a></li>
+              <li><a href="#cve와-cwe-비교">CVE와 CWE 비교</a></li>
+              <li><a href="#cve와-cwe의-관계">CVE와 CWE의 관계</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#3-해킹의-실제-사례들">3. 해킹의 실제 사례들</a>
+      - {:.} <a href="#블라디미르-레빈vladimir-levin의-씨티은행-해킹-사건">블라디미르 레빈(Vladimir Levin)의 씨티은행 해킹 사건</a>
+      - {:.} <a href="#조나단-제임스jonathan-james의-나사-해킹-사건">조나단 제임스(Jonathan James)의 나사 해킹 사건</a></li>
+      <li><a href="#4-아무거나-쓰세요">4. 아무거나 쓰세요</a>
+      - {:.} <a href="#마크다운-너무-재밌다">마크다운 너무 재밌다</a>
+      - {:.} <a href="#마크다운-너무-재밌다-1">마크다운 너무 재밌다</a>
+      - {:.} <a href="#마크다운-너무-재밌다-2">마크다운 너무 재밌다</a>
+      - {:.} <a href="#마크다운-너무-재밌다-3">마크다운 너무 재밌다</a></li>
+      <li><a href="#그냥-링크-달기--httpswwwyoutubecom">그냥 링크 달기 : https://www.youtube.com/</a>
+      - {:.} <a href="#표만들기">표만들기</a>
+      - {:.} <a href="#강조-방법">강조 방법</a></li>
+    </ul>
+  </li>
+</ul>
+:ET
