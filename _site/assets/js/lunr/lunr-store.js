@@ -16,4 +16,10 @@ var store = [{
         "tags": ["Blog"],
         "url": "http://localhost:4000/blog/words-organize/",
         "teaser": "http://localhost:4000/assets/images/profile_image.jpg"
+      },{
+        "title": "Divide-and-conquer 와 Dynamic Programming 비교",
+        "excerpt":"Divide-and-conquer 정의: ‘나누고 정복한다’는 의미로 크고 복잡한 문제를 보다 해결하기 쉬운 단위로 나눠서 해결한 후 다시 합치는 알고리즘이다. Recurrence function으로 구현 표현 가능하고 자기 자신보다 작은 문제로 나누다가 Base case에 도달하면 리턴한다. 예시: 가장 대표적인 Divide-and-conquer(이하 D-and-C)의 예시로 정렬 알고리즘 중에 mergesort가 있다. 대부분의 sorting 알고리즘들(insertion, selection 등)의 time complexity는...","categories": ["Algorithm"],
+        "tags": ["Algorithm","Divide-and-conquer","DP"],
+        "url": "http://localhost:4000/algorithm/algorithm_DandC_DP/",
+        "teaser": "http://localhost:4000/assets/images/profile_image.jpg"
       }]

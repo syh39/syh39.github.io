@@ -1,0 +1,19 @@
+I"�
+<hr />
+<h2 id="divide-and-conquer">Divide-and-conquer</h2>
+
+<p><strong>정의</strong>: ‘나누고 정복한다’는 의미로 크고 복잡한 문제를 보다 해결하기 쉬운 단위로 나눠서 해결한 후 다시 합치는 알고리즘이다. Recurrence function으로 구현 표현 가능하고 자기 자신보다 작은 문제로 나누다가 Base case에 도달하면 리턴한다.</p>
+
+<p><strong>예시</strong>: 가장 대표적인 Divide-and-conquer(이하 D-and-C)의 예시로 정렬 알고리즘 중에 mergesort가 있다. 대부분의 sorting 알고리즘들(insertion, selection 등)의 time complexity는 O(n^2)인데 비해, D-and-C의 개념을 사용한 merge sort는 time complexity가 O(nlogn)로 훨씬 좋은 효율을 보인다.</p>
+
+<h2 id="dynamic-programming">Dynamic Programming</h2>
+
+<p><strong>정의</strong>: 큰 문제를 작은 문제로 나누어 푸는 알고리즘이다. Divide-and-conquer와 비슷하지만 작은 문제의 중복이 일어나지 않는다는 점에서 다르다. Dynamic Programming(이하 DP)으로 풀 수 있는 문제의 전제 조건은 해당 문제가 Optimal Substructure를 가지고 있는지 여부이다. Optimal substructure란 문제의 궁극적인(최적의) 솔루션이 더 작은 문제의 최적의 솔루션들로 이루어져있다는 개념이다. 즉, 작은 문제부터 해결해나가지만 작은 문제 중의 최적의 솔루션이 큰 문제의 솔루션에도 쓰인다는 것이다. 이러한 구조를 가지고 있는 문제는 DP로 해결할 수 있다.</p>
+
+<p><strong>예시</strong>: 가장 대표적인 DP 문제로 Matrix Chain Multiplication(MCM)문제와 Longest Common Subsequence(LCS)문제가 있다. 두 문제 모두 특정 부분까지의 최적의 솔루션을 메모해 놓았다가 그 다음 부분의 최적의 솔루션을 결정하는 방식으로 Optimal Substructure를 가지고 있기 때문에 DP를 적용할 수 있다.</p>
+
+<h2 id="divide-and-conquer-vs-dynamic-programming">Divide-and-conquer vs Dynamic Programming</h2>
+
+<p>두 문제 모두 문제의 해결 방식이 큰 문제를 작은 문제로 나누는 방식이라는 점에서 공통점이 있지만 DP의 경우 작은 문제부터 풀고 작은 문제의 솔루션을 메모해 놓았다가 큰 문제에서 작은 문제의 솔루션을 그대로 가져다 쓰는 방식인 것에 반해 D-and-C의 경우 작은 문제를 풀 때 전에 이미 풀었던 문제이더라도 다시 푸는 방식이기 때문에 같은 계산 작업이 많은 문제의 경우 DP가 D-and-C보다 더 유리하다고 할 수 있다. 일반적으로 D-and-C는 위에서부터 아래로 내려오는 Top-down 방식이지만 DP의 경우 Bottom-up방식(Top-down도 가능)이다.</p>
+
+:ET
