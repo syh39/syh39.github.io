@@ -19,7 +19,13 @@ var store = [{
       },{
         "title": "Divide-and-conquer 와 Dynamic Programming 비교",
         "excerpt":"Divide-and-conquer 정의: ‘나누고 정복한다’는 의미로 크고 복잡한 문제를 보다 해결하기 쉬운 단위로 나눠서 해결한 후 다시 합치는 알고리즘이다. Recurrence function으로 구현 표현 가능하고 자기 자신보다 작은 문제로 나누다가 Base case에 도달하면 리턴한다. 예시: 가장 대표적인 Divide-and-conquer(이하 D-and-C)의 예시로 정렬 알고리즘 중에 mergesort가 있다. 대부분의 sorting 알고리즘들(insertion, selection 등)의 time complexity는...","categories": ["Algorithm"],
-        "tags": ["Algorithm","Divide-and-conquer","DP"],
+        "tags": ["Blog","Algorithm","Divide-and-conquer","DP"],
         "url": "http://localhost:4000/algorithm/algorithm_DandC_DP/",
+        "teaser": "http://localhost:4000/assets/images/profile_image.jpg"
+      },{
+        "title": "Git이란 무엇인가",
+        "excerpt":"Git이란 무엇인가 위키백과의 정의에 의하면 Git은 프로그램 등의 소스 코드 관리를 위한 분산 버전 관리 시스템이다. 쉬운 말로 여러명의 분산된 개발자들이 특정 프로젝트를 자신의 컴퓨터로 협업하여 개발하면서 개발 버전을 관리할 수 있는 시스템이다. 여러 버전을 스냅샷으로 기록해두기 때문에 파일을 잃어버리거나 예전 버전으로 못돌아가는 불상사가 발생할 일이 없다. 따라서 개발자라면 Git을...","categories": ["Git"],
+        "tags": ["Blog","Git"],
+        "url": "http://localhost:4000/git/git/",
         "teaser": "http://localhost:4000/assets/images/profile_image.jpg"
       }]
