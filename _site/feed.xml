@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-23T23:06:42+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Divide and Comquer</title><subtitle>An amazing website.</subtitle><author><name>Yohan Sun</name></author><entry><title type="html">Git이란 무엇인가</title><link href="http://localhost:4000/git/git/" rel="alternate" type="text/html" title="Git이란 무엇인가" /><published>2020-04-23T00:00:00+09:00</published><updated>2020-04-23T00:00:00+09:00</updated><id>http://localhost:4000/git/git</id><content type="html" xml:base="http://localhost:4000/git/git/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-23T23:40:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Divide and Comquer</title><subtitle>An amazing website.</subtitle><author><name>Yohan Sun</name></author><entry><title type="html">Git이란 무엇인가</title><link href="http://localhost:4000/git/git/" rel="alternate" type="text/html" title="Git이란 무엇인가" /><published>2020-04-23T00:00:00+09:00</published><updated>2020-04-23T00:00:00+09:00</updated><id>http://localhost:4000/git/git</id><content type="html" xml:base="http://localhost:4000/git/git/">&lt;hr /&gt;
 &lt;h2 id=&quot;git이란-무엇인가&quot;&gt;Git이란 무엇인가&lt;/h2&gt;
 
 &lt;p&gt;위키백과의 정의에 의하면 Git은 프로그램 등의 소스 코드 관리를 위한 분산 버전 관리 시스템이다. 쉬운 말로 여러명의 분산된 개발자들이 특정 프로젝트를 자신의 컴퓨터로 협업하여 개발하면서 개발 버전을 관리할 수 있는 시스템이다. 여러 버전을 스냅샷으로 기록해두기 때문에 파일을 잃어버리거나 예전 버전으로 못돌아가는 불상사가 발생할 일이 없다. 따라서 개발자라면 Git을 사용할 줄 알아야 한다. 어떤 회사에서는 Git 아이디를 요구할정도로 Git은 개인 프로젝트의 저장소 혹은 개발자들의 SNS역할을 하기도 한다.&lt;/p&gt;
@@ -21,7 +21,7 @@
 
 &lt;p&gt;&lt;strong&gt;git config&lt;/strong&gt;: git의 내 기본 정보를 설정한다. Git config –global user.name “내 이름” 을 통해 내 계정아이디를 등록할 수 있고  git config –global user.email “내 이메일” 을 통해 내 계정 이메일을 등록할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;git add -A(.)&lt;/strong&gt;: 현재 디렉토리의 모든 로컬 파일들을 git(staging area)에 등록한다. 만약 새 파일을 만든게 아니라 기존 파일을 변경했다면 해당 파일이 이미 git에 등록되어 있기 때문에 바로 commit 할 수 있다. -A 옵션 대신에 특정 파일명을 주면 해당 파일만 add된다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;git add -A(.)&lt;/strong&gt;: 현재 디렉토리의 모든 로컬 파일들을 git(staging area)에 등록한다.  -A 옵션 대신에 특정 파일명을 주면 해당 파일만 add된다.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;git commit -m “ “&lt;/strong&gt;: Commit을 하고 내용을 기록한다.&lt;/p&gt;
 
@@ -39,7 +39,7 @@
 
 &lt;p&gt;&lt;strong&gt;git clone&lt;/strong&gt;: Remote repository를 내 local repo로 가져온다.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;.gitignore 파일&lt;/strong&gt;: Git이 무시하길 원하는 파일들의 목록을 저장하는 파일. 여기에 저장된 파일은 git이 관리하지 않는다. ex) *.asv, hello.txt&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;.gitignore 파일&lt;/strong&gt;: Git이 무시하길 원하는 파일들의 목록을 저장하는 파일이다. 여기에 저장된 파일은 git이 관리하지 않는다. ex) *.asv, hello.txt&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/gitother.jpg&quot; alt=&quot;gitother&quot; /&gt;&lt;/p&gt;</content><author><name>Yohan Sun</name></author><category term="Blog" /><category term="Git" /></entry><entry><title type="html">Divide-and-conquer 와 Dynamic Programming 비교</title><link href="http://localhost:4000/algorithm/algorithm_DandC_DP/" rel="alternate" type="text/html" title="Divide-and-conquer 와 Dynamic Programming 비교" /><published>2020-04-21T00:00:00+09:00</published><updated>2020-04-21T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/algorithm_DandC_DP</id><content type="html" xml:base="http://localhost:4000/algorithm/algorithm_DandC_DP/">&lt;hr /&gt;
 &lt;h2 id=&quot;divide-and-conquer&quot;&gt;Divide-and-conquer&lt;/h2&gt;
