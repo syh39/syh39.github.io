@@ -99,7 +99,8 @@ analytics:
 author:
   name             : "Yohan Sun"
   avatar           : "/assets/images/profile3.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "컴린이의 좌충우돌 일기메모장"
+  bio              : "컴린이의 좌충우돌 일기메모장
+                      생각하는 대로 살지 않으면 결국에는 사는 대로 생각하게 된다. - 폴 부르제"
   location         : "Pohang, Korea"
   email            :
   links:
