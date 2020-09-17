@@ -119,21 +119,21 @@ int DpSolution(int n, int k){
 
 ## 코드 실행 결과
 
-![test1](/assets/images/test1.jpg)
+![test1](/assets/images/D_and_C/test1.jpg)
 
-![test2](/assets/images/test2.jpg)
+![test2](/assets/images/D_and_C/test2.jpg)
 
-![test3](/assets/images/test3.jpg)
+![test3](/assets/images/D_and_C/test3.jpg)
 
-![test4](/assets/images/test4.jpg)
+![test4](/assets/images/D_and_C/test4.jpg)
 
-![test5](/assets/images/test5.jpg)
+![test5](/assets/images/D_and_C/test5.jpg)
 
-![test6](/assets/images/test6.jpg)
+![test6](/assets/images/D_and_C/test6.jpg)
 
-![test7](/assets/images/test7.jpg)
+![test7](/assets/images/D_and_C/test7.jpg)
 
-![test8](/assets/images/test8.jpg)
+![test8](/assets/images/D_and_C/test8.jpg)
 
 Input이 적을 때는 D-and-C가 더 시간이 적게 걸리다가 Input이 커지기 시작하자 DP는 시간의 변화가 크게 없는 반면에 D-and-C는 시간이 기하급수적으로 늘어나면서 나중에는 큰 Input에는 거의 작동할 수 없는 수준에 이르렀다. 조합을 찾는 공식 nCr = n!/r!(n-r)! 특성상 D-and-C는 같은 문제를 수십, 수백번 풀게 되는 반면에 DP는 문제의 해답을 배열에 저장해 놓았다가 답만 가져오기 떄문에 초반에는 D-and-C보다 시간이 조금 더 걸렸지만 숫자가 커지면 커질수록 유리하다는 것을 확인할 수 있다. 
 
