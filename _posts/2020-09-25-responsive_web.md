@@ -309,12 +309,19 @@ body {
 - max-aspect-ratio, min-aspect-ratio: 화면의 가로:세로 비율 최대치, 최소치
 - resolution: 출력 디바이스의 해상도(dpi, dpcm)
 
-~~~CSS
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  body {
-    /* css code */
-  }
-} /* 디바이스 화면(브라우저)의 너비가 480이상, 768이하 일 때 css 코드 실행
+~~~html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+      body {
+        /* css code */
+      }
+    }/* 디바이스 화면(브라우저)의 너비가 480이상, 768이하 일 때 css 코드 실행
+  </style>
+
 ~~~
 
 
