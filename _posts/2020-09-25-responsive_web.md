@@ -80,6 +80,8 @@ Viewport는 meta 태그 안에서 사용이 되는데 보통 meta 태그는 검�
 
 ### 2. Grid-View
 
+#### 1. Grid-View
+
 Grid-view는 웹페이지를 디자인할 때 페이지의 각 요소들을 배치하기 위해 활용하는 세로로 된 가상의 구분선이다. 많은 웹페이지들은 이런 grid-view를 기반으로 만들어져있다. 보통 grid-view는 12개의 column으로 구성되어 있는데 이러한 구성이 웹페이지를 디자인할 때 큰 도움이 된다. 
 
 >  Grid-view 예시 1
@@ -91,6 +93,8 @@ Grid-view는 웹페이지를 디자인할 때 페이지의 각 요소들을 배�
 >  Grid-view 예시 2
 
 ![R_web](/assets/images/Responsive_web/gridview_example2.jpg) 
+
+#### 2. Box-sizing 속성
 
 Grid-view를 사용하기 위해서는 CSS에 'box-sizing: border-box;' 라는 속성을 추가해줘야 하는데 이 속성은 해당 영역 내에 margin이나 padding을 적용하더라도 해당 영역을 벗어나지 않게 해주는 속성이다. 
 
@@ -128,7 +132,7 @@ Grid-view를 사용하기 위해서는 CSS에 'box-sizing: border-box;' 라는 �
 
 ![R_web](/assets/images/Responsive_web/box-sizing_example1.jpg) 
 
-Box-sizing 속성이 적용이 안됐을 때 발생하는 문제점이다. 똑같이 div 태그로 감쌌지만 div2 클래스의 경우 패딩을 주자 크기가 지정되어 있는 width인 300px을 넘어가 버렸다. 아래는 'box-sizing: border-box' 속성을 적용한 코드이다. 
+위의 코드와 결과는 Box-sizing 속성이 적용이 안됐을 때 발생하는 문제점을 보여준다. 똑같이 div 태그로 감쌌지만 div2 클래스의 경우 패딩을 주자 크기가 지정되어 있는 width인 300px을 넘어가 버렸다. 아래는 'box-sizing: border-box' 속성을 적용한 코드이다. 
 
 ~~~html
 <!DOCTYPE html>
@@ -147,7 +151,7 @@ Box-sizing 속성이 적용이 안됐을 때 발생하는 문제점이다. 똑�
   height: 100px;  
   padding: 50px;
   border: 1px solid red;
-  box-sizing: border-box;
+  box-sizing: border-box;  /* box-sizing 속성 적용 */
 }
 </style>
 </head>
@@ -166,5 +170,130 @@ Box-sizing 속성이 적용이 안됐을 때 발생하는 문제점이다. 똑�
 
 ![R_web](/assets/images/Responsive_web/box-sizing_example2.jpg) 
 
-'box-sizing: border-box' 속성을 한줄만 적용했는데 패딩이 주어져도 지정돼있는 width인 300px을 넘어가지 않았다. 이웹페이지의 요소들을 배치하기 위해 box-sizing 속성이 필요한 이유이다. 
+똑같은 코드에 'box-sizing: border-box' 속성을 한줄만 적용했는데 패딩이 주어져도 지정돼있는 width인 300px을 넘어가지 않았다. 웹페이지의 요소들을 배치하기 위해 box-sizing 속성이 필요한 이유이다. 
 
+
+
+#### 3. Realative Positioning
+
+보통 웹페이지에서 각 요소들을 배치할 때 해당 요소들의 크기를 pixel 사이즈로 절대적으로 지정하기 보다는 비율로 상대적으로 지정한다. 각 디바이스 별로 화면의 높이와 넓이가 각양각색이기 때문이다. 아래는 요소들의 크기를 비율로 지정한 코드이다. 
+
+~~~html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+  /* 모든 요소에 공통적으로 위의 속성을 적용한다 */
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+  /* 각 column을 12개로 나눠서 위치를 지정한다(한 column당 8.33%) */
+  
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3">  <!-- col-3 클래스의 경우 위에서 25%의 넓이를 가지고 있기 때문에 화면에서 25%의 넓이로 지정된다 -->
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="col-9"> <!-- col-9 클래스의 경우 위에서 75%의 넓이를 가지고 있기 때문에 화면에서 75%의 넓이로 지정된다 -->
+  <h1>The City</h1>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</div>
+
+</body>
+</html>
+
+~~~
+
+
+
+**결과**
+
+![R_web](/assets/images/Responsive_web/relative_positioning.jpg) 
+
+
+
+### 3. Media Queries
+
+Media query는 CSS3에 처음 소개된 기술로 특정 조건이 참일 때 '@media' rule을 사용하여 스타일을 정의하는 방식이다. CSS에서 '@'로 시작하는 문법은 특정 조건에서만 실행되는 스타일을 지정할 때 쓰이는 데 Media queries의 경우 @media로 시작하게 된다. 
+
+~~~html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: lightgreen; /* default 배경색은 연두색이다 */
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue; /* 하지만 화면 크기가 max-width: 600px의 경우, 즉 600px이하의 화면 크기의 경우 배경색은 하늘색이다 */
+  }
+}
+</style>
+</head>
+<body>
+
+<p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+
+</body>
+</html>
+
+~~~
+
+
+
+**결과**
+
+![R_web](/assets/images/Responsive_web/media_query1.jpg) 
+
+![R_web](/assets/images/Responsive_web/media_query2.jpg) 
