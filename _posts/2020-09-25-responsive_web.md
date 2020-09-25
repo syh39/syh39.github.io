@@ -174,7 +174,7 @@ Grid-view를 사용하기 위해서는 CSS에 'box-sizing: border-box;' 라는 �
 
 
 
-#### 3. Realative Positioning
+#### 3. Relative Positioning
 
 보통 웹페이지에서 각 요소들을 배치할 때 해당 요소들의 크기를 pixel 사이즈로 절대적으로 지정하기 보다는 비율로 상대적으로 지정한다. 각 디바이스 별로 화면의 높이와 넓이가 각양각색이기 때문이다. 아래는 요소들의 크기를 비율로 지정한 코드이다. 
 
@@ -218,7 +218,7 @@ Grid-view를 사용하기 위해서는 CSS에 'box-sizing: border-box;' 라는 �
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-  /* 각 column을 12개로 나눠서 위치를 지정한다(한 column당 8.33%) */
+  /* 화면을 12개로 나눠서 비율로 크기를 지정한다(화면을 차지하는 비율) */
   
 </style>
 </head>
@@ -297,3 +297,186 @@ body {
 ![R_web](/assets/images/Responsive_web/media_query1.jpg) 
 
 ![R_web](/assets/images/Responsive_web/media_query2.jpg) 
+
+
+
+#### Media Queries 의 활용
+
+- max-width, max-height: 디바이스 화면(브라우저)의 너비, 높이의 최대치
+- min-width, min-height: 디바이스 화면(브라우저)의 너비, 높이의 최소치
+- max-color, max-color-index: 디바이스의 표현 가능한 최대 컬러 비트 수, 최대 컬러 갯수
+- orientation: 화면(viewport) 표시 방향(landscape or portrait)
+- max-aspect-ratio, min-aspect-ratio: 화면의 가로:세로 비율 최대치, 최소치
+- resolution: 출력 디바이스의 해상도(dpi, dpcm)
+
+~~~CSS
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    /* css code */
+  }
+} /* 디바이스 화면(브라우저)의 너비가 480이상, 768이하 일 때 css 코드 실행
+~~~
+
+
+
+### 4. 종합 코드
+
+~~~html
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;  /* box-sizing 속성 적용 */
+}
+
+video {
+  width: 100%;    /* video가 들어있는 영역 안에서 꽉 채워라 */
+  height: auto;   /* 넓이에 비례해서 원래 비율로 높이를 맞춰라 */
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {  /* 모든 'col-'로 시작하는 클래스들에 적용할 css 속성 */
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) { /* 600px이상, 768px미만의 넓이를 가질 때(태블릿 모드) */ 
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) { /* 768px이상의 넓이를 가질 때(데스크탑 모드) */ 
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;  /* 모든 html에 적용될 폰트 */
+}
+
+.header { 
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<div class="header"> <!-- 이 영역에 대해서는 media queries 가 적용되지 않음. 화면 크기에 관계없이 동일하게 표시됨 -->
+  <h1>Chania</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu"> <!-- 데스크탑 모드, 태블릿 모드 일때 50%의 넓이 적용 -->
+    <ul>
+      <li>The Flight</li>
+      <li>The City</li>
+      <li>The Island</li>
+      <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9"> <!-- 데스크탑 모드일 때는 50%의 넓이, 태블릿 모드일 때는 75%의 넓이 적용 -->
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <video width="400" controls>
+      <source src="mov_bbb.mp4" type="video/mp4">
+      <source src="mov_bbb.ogg" type="video/ogg">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <div class="col-3 col-s-12"> <!-- 데스크탑 모드일 때는 25%의 넓이, 태블릿 모드일 때는 100%의 넓이 적용 -->
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer"> <!-- 이 영역에 대해서는 media queries 가 적용되지 않음. 화면 크기에 관계없이 동일하게 표시됨 -->
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
+~~~
+
+
+
+**결과**
+
+![R_web](/assets/images/Responsive_web/all_desktop.jpg) 
+
+![R_web](/assets/images/Responsive_web/all_tablet.jpg) 
+
+![R_web](/assets/images/Responsive_web/all_mobile.jpg) 
