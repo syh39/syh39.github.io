@@ -50,13 +50,11 @@ Responsive Web은 데스크탑, 스마트폰, 태블릿같이 다양한 기기�
 
 
 
-## Responsive Web Design
+## Responsive Web Design 관련 tag 및 css
 
 
 
-### Responsive Web Design 관련 tag 및 css
-
-#### 1. meta viewport
+### 1. meta viewport
 
 Viewport 사용자의 디바이스 화면에서 보여지는 영역을 의미한다. 원래 웹 페이지는 데스크탑에서만 동작했지만 스마트폰과 태블릿의 출현으로 작은 화면으로 웹 페이지를 사용하는 데에 불편함이 있었기 때문에 스마트폰과 태블릿에서도 편리하게 웹 페이지를 사용할 수 있도록 하는 responsive web이 등장했다. 그런 관점에서 viewport는 특정 기기에서 웹 페이지를 볼 수 있는 크기, 즉 해당 디바이스의 화면의 크기를 의미한다. 
 
@@ -76,8 +74,97 @@ Viewport는 meta 태그 안에서 사용이 되는데 보통 meta 태그는 검�
 
 >  Meta tag 적용 전과 적용 후
 
-![html1](/assets/images/Responsive_web/meta_tag.jpg) 
+![R_web](/assets/images/Responsive_web/meta_tag.jpg) 
 
 
 
+### 2. Grid-View
+
+Grid-view는 웹페이지를 디자인할 때 페이지의 각 요소들을 배치하기 위해 활용하는 세로로 된 가상의 구분선이다. 많은 웹페이지들은 이런 grid-view를 기반으로 만들어져있다. 보통 grid-view는 12개의 column으로 구성되어 있는데 이러한 구성이 웹페이지를 디자인할 때 큰 도움이 된다. 
+
+>  Grid-view 예시 1
+
+![R_web](/assets/images/Responsive_web/gridview_example1.jpg) 
+
+
+
+>  Grid-view 예시 2
+
+![R_web](/assets/images/Responsive_web/gridview_example2.jpg) 
+
+Grid-view를 사용하기 위해서는 CSS에 'box-sizing: border-box;' 라는 속성을 추가해줘야 하는데 이 속성은 해당 영역 내에 margin이나 padding을 적용하더라도 해당 영역을 벗어나지 않게 해주는 속성이다. 
+
+~~~html
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;  
+  padding: 50px;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<div class="div1">This div is smaller (width is 300px and height is 100px).</div>
+<br>
+<div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
+
+</body>
+</html>
+
+~~~
+
+**결과**
+
+![R_web](/assets/images/Responsive_web/box-sizing_example1.jpg) 
+
+Box-sizing 속성이 적용이 안됐을 때 발생하는 문제점이다. 똑같이 div 태그로 감쌌지만 div2 클래스의 경우 패딩을 주자 크기가 지정되어 있는 width인 300px을 넘어가 버렸다. 아래는 'box-sizing: border-box' 속성을 적용한 코드이다. 
+
+~~~html
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;  
+  padding: 50px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<div class="div1">Both divs are the same size now!</div>
+<br>
+<div class="div2">Hooray!</div>
+
+</body>
+</html>
+
+~~~
+
+**결과**
+
+![R_web](/assets/images/Responsive_web/box-sizing_example2.jpg) 
+
+'box-sizing: border-box' 속성을 한줄만 적용했는데 패딩이 주어져도 지정돼있는 width인 300px을 넘어가지 않았다. 이웹페이지의 요소들을 배치하기 위해 box-sizing 속성이 필요한 이유이다. 
 
