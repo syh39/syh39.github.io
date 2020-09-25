@@ -319,7 +319,7 @@ body {
 
 
 
-### 4. 종합 코드
+## 종합 코드
 
 ~~~html
 <!DOCTYPE html>
@@ -475,8 +475,14 @@ html {
 
 **결과**
 
+> 데스크탑 모드
+
 ![R_web](/assets/images/Responsive_web/all_desktop.jpg) 
 
+> 태블릿 모드
+
 ![R_web](/assets/images/Responsive_web/all_tablet.jpg) 
+
+> 스마트폰 모드 
 
 ![R_web](/assets/images/Responsive_web/all_mobile.jpg) 
