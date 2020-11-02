@@ -24,7 +24,7 @@ toc_sticky: true
 
 >  문제 화면
 
-![BOJ](/assets/images/html_css/www.acmicpc.net_problem_2502.jpg)
+![BOJ](/assets/images/BOJ/www.acmicpc.net_problem_2502.jpg)
 
 ### 문제 풀이
 
