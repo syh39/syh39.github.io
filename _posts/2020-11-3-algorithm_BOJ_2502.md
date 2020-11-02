@@ -26,40 +26,54 @@ toc_sticky: true
 
 ![BOJ](/assets/images/BOJ/www.acmicpc.net_problem_2502.jpg)
 
+
+
+문제 링크 : <https://www.acmicpc.net/problem/2502> 
+
+
+
 ### 문제 풀이
 
-이 문제는 식을 세우고 나서 코드로 구현하는게 핵심인 문제이다.  
+이 문제는 식을 세우고 나서 코드로 구현하는게 핵심인 문제이다. 
 
-#### 1. HTML의 기본 구조
+ 
 
-```html
-<!DOCTYPE html>  
-<!--모든 HTML 문서는 위쪽과 같이 해당 문서가 HTML 문서라는 선언 문구로 시작한다-->
-<!--이 안의 글자들은 모두 주석이다-->
-<!--기본적으로 HTML은 태그로 표현이 되는데 태그의 시작과 끝은 각각 <태그이름>, </태그이름>의 형식으로 표현되지만 예외사항도 존재한다-->  
+#### 제출 코드
 
-<html>
-<body>
+```c++
+#include <iostream>
 
-<h1>My First Heading</h1>
-<h2>My First Heading</h2>
-<h3>My First Heading</h3>
-<h4>My First Heading</h4>
-<h5>My First Heading</h5>
-<h6>My First Heading</h6> 
-<!--<h1>부터 <h6>는 문서의 헤딩을 표현하는 태그이다. <h1>이 가장 큰 헤딩이고 <h6>로 갈수록 헤딩의 크기가 작아진다-->
-  
-<p>My first paragraph.</p>
-<!--paragraph를 표시하는 태그이다-->
+using namespace std;
 
-</body> <!--HTML 문서에서 시각적으로 사용자에게 보여지는 부분은 <body>와 </body> 사이에 있는 부분이다-->
-</html> <!--모든 HTML 문서는 <html>로 시작해 </html>로 끝난다-->
+int main() {
+  int arr[31][2];
+  int D, K;
+  arr[1][0] = 1;
+  arr[1][1] = 0;
+  arr[2][0] = 0;
+  arr[2][1] = 1;
 
+  for(int i = 3 ; i < 31 ; i++) {
+    arr[i][0] = arr[i-1][0] + arr[i-2][0]; // A식
+    arr[i][1] = arr[i-1][1] + arr[i-2][1]; // B식
+
+  }
+  cin >> D >> K ;
+
+  for(int A = 1 ; A <=K ; A++) {
+    for(int B = A ; B <=K ; B++) {
+      if(((arr[D][0]*A) + (arr[D][1]*B) == K) && B>=A){
+        cout << A << endl;
+        cout << B << endl;
+
+        return 0;
+      }
+    }
+  }
+}
 ```
 
-**결과**
 
-![html1](/assets/images/html_css/result1.jpg)
 
 
 
