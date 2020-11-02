@@ -16,13 +16,11 @@ toc_sticky: true
 ---
 
 ---
-## [백준 2502번] 떡먹는 호랑이 (실버 1)
 
 
 
 
-
->  문제 화면
+### 문제 화면
 
 ![BOJ](/assets/images/BOJ/www.acmicpc.net_problem_2502.jpg)
 
