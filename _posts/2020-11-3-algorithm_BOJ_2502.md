@@ -36,7 +36,7 @@ toc_sticky: true
 
  
 
-#### 제출 코드
+### 제출 코드
 
 ```c++
 #include <iostream>
