@@ -4,10 +4,10 @@ excerpt: ""
 
 categories:
   - Algorithm
-  - Math
 tags:
   - Algorithm
   - Math
+  - Silver Level
 last_modified_at: 2020-11-3 
 toc: true
 toc_label: "Contents"

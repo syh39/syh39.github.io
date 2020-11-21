@@ -4,8 +4,6 @@ excerpt: ""
 
 categories:
   - Web
-  - HTML
-  - CSS
 tags:
   - Web
   - HTML

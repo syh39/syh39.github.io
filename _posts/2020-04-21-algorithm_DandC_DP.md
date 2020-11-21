@@ -5,10 +5,8 @@ excerpt: ""
 categories:
   - Algorithm
 tags:
-  - Blog
   - Algorithm
-  - Divide-and-conquer
-  - DP
+  - Dynamic Programming
 last_modified_at: 2020-04-21 
 toc: true
 toc_label: "Contents"
