@@ -9,7 +9,6 @@ tags:
   - Math
   - Silver Level
 last_modified_at: 2020-11-3 
-classes: wide
 toc: true
 toc_label: "Contents"
 toc_icon: "cog"
