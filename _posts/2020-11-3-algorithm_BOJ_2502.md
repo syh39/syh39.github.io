@@ -15,8 +15,6 @@ toc_icon: "cog"
 toc_sticky: true
 ---
 
----
-
 
 ### 문제 화면
 
