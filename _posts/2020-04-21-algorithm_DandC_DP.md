@@ -6,7 +6,7 @@ categories:
   - Algorithm
 tags:
   - Algorithm
-  - Dynamic Programming
+  - DP
 last_modified_at: 2020-04-21 
 toc: true
 toc_label: "Contents"
