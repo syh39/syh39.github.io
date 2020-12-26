@@ -1,5 +1,5 @@
 ---
-title:  "Responsive Web이란 무엇인가"
+title:  "Responsive Web"
 excerpt: ""
 
 categories:
