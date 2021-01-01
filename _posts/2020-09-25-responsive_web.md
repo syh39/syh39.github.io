@@ -24,7 +24,6 @@ Responsive Web은 데스크탑, 스마트폰, 태블릿같이 다양한 기기�
 
 ![R_web](/assets/images/Responsive_web/responsive_web_example.jpg)
 
- 
 
 >  Responsive Web 예시 - 데스크탑 화면
 
