@@ -20,7 +20,7 @@ toc_sticky: true
 
 우리가 매일 사용하고 있는 인터넷을 구성하는 시스템을 웹 시스템(web system)이라고 한다. 이러한 웹 시스템은 아래의 그림과 같이 클라이언트(client)와 서버(server)로 구성된다.
 
-![dothome](/assets/images/dothome_setting.img_php_web_system.png)
+![dothome](/assets/images/dothome_setting/img_php_web_system.png)
 
 서버란 간단히 말해 웹 서비스를 제공하는 컴퓨터를 의미한다. 클라이언트란 서버가 제공하는 웹 서비스를 이용하는 사용자 또는 사용자의 기기(브라우저)를 의미한다.
 
@@ -103,7 +103,7 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
 
 
-![dothome](assets/images/Filezilla.png)
+![dothome](/assets/images/dothome_setting/Filezilla.png)
 
 
 
