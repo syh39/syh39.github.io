@@ -41,6 +41,18 @@ toc_sticky: true
   6. 대용량 파일 지원
   7. 대역폭 스로틀링
 
+
+
+#### 닷홈 무료 호스팅 신청
+
+[닷홈 무료 호스팅 신청](https://www.dothome.co.kr/web/free/index.php)
+
+1. 회원가입
+
+2. APM 공간 설치
+
+   
+
 #### APM
 
 - Apache 
@@ -82,15 +94,6 @@ toc_sticky: true
       - 오픈 소스 라이선스(GPL)에 부합하는 한 무료로 사용 가능
       - 오픈 소스 라이선스(GPL)을 만족시키지 못하는 응용 프로그램을 배포할 생각이라면 별도의 상업용 라이선스를 사용
 
-  
-
-  #### 닷홈 무료 호스팅 신청
-
-  [닷홈 무료 호스팅 신청](https://www.dothome.co.kr/web/free/index.php)
-
-  1. 회원가입
-  2. APM 공간 설치
-
 
 
 ### 2. FTP 클라이언트 프로그램 설치(Filezilla)
@@ -119,7 +122,7 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
 - 자신의 컴퓨터 OS에 맞는 버전의 VScode를 설치한다. 
 
-[Visual Studio Code 설치](https://code.visualstudio.com/download)
+  [Visual Studio Code 설치](https://code.visualstudio.com/download)
 
 
 
@@ -136,12 +139,11 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
 - HTML Snippets extension
   - HTML 태그의 자동 완성 기능을 제공한다
-- Sftp extension
-  - 로컬에서 웹페이지를 만들고 ftp 클라이언트를 이용하여 업로드 하는 과정 없이 VS code 내에서 ftp 설정 후 편집하는 즉시 ftp를 이용해서 업로드 할 수 있는 기능을 제공한다. 
-
-
 
 ![dothome](/assets/images/dothome_setting/html.png)
+
+- Sftp extension
+  - 로컬에서 웹페이지를 만들고 ftp 클라이언트를 이용하여 업로드 하는 과정 없이 VS code 내에서 ftp 설정 후 편집하는 즉시 ftp를 이용해서 업로드 할 수 있는 기능을 제공한다. 
 
 ![dothome](/assets/images/dothome_setting/sftp.png)
 
@@ -163,7 +165,7 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
   ![dothome](/assets/images/dothome_setting/sftpconfig2.png)
 
-  - 설정을 하면 extension 아이콘 밑에 sftp 아이콘이 생성된다. My Server를 누르는 순간 ftp 암호를 입력하라고 뜨게 되는데 암호를 입력을 하게 되면 html폴더가 생기는데 이 폴더가 웹에서 root폴더가 된다. 
+  - SFTP:Config 설정을 완료하면 extension 아이콘 밑에 sftp 아이콘이 생성된다. My Server를 누르는 순간 ftp 암호를 입력하라고 뜨게 되는데 암호를 입력을 하면 html폴더가 생성된다. 이 폴더가 웹에서 root폴더가 된다. 
 
   ![dothome](/assets/images/dothome_setting/sftpmenu.png)
 
@@ -171,7 +173,7 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
 #### 5. index.html 파일 작성 및 업로드
 
-- 생성된 html 폴더 아래에 index.html 파일을 생성한다. 이때 파일에 html이라고 쓰는 순간 html snippet extensiondl 여러 html 템플릿을 옵션으로 주는데 그 중에 html:5 를 선택해준다. 
+- 생성된 html 폴더 아래에 index.html 파일을 생성한다. 파일 안에서 html이라고 쓰는 순간 기존에 설치했던 html snippet extension이 여러 html 템플릿을 옵션으로 주는데 그 중에 html:5 를 선택해준다. 
 
   ![dothome](/assets/images/dothome_setting/index1.png)
 
