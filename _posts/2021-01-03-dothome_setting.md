@@ -16,7 +16,7 @@ toc_sticky: true
 
 ### 1. 웹 서버 설정하기
 
-#### 웹 시스템
+#### 웹 시스템 큰 그림
 
 우리가 매일 사용하고 있는 인터넷을 구성하는 시스템을 웹 시스템(web system)이라고 한다. 이러한 웹 시스템은 아래의 그림과 같이 클라이언트(client)와 서버(server)로 구성된다.
 
@@ -183,7 +183,7 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
   
 
-### 결과
+### 4. 결과
 
 ![dothome](/assets/images/dothome_setting/dothomeresult.png)
 
