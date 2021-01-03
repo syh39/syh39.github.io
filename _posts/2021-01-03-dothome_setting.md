@@ -181,5 +181,9 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
   ![dothome](/assets/images/dothome_setting/index2.png)
 
-  ![dothome](/assets/images/dothome_setting/dothomeresult.png)
+  
+
+### 결과
+
+![dothome](/assets/images/dothome_setting/dothomeresult.png)
 
