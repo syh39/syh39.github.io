@@ -165,7 +165,7 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
   ![dothome](/assets/images/dothome_setting/sftpconfig2.png)
 
-  - SFTP:Config 설정을 완료하면 extension 아이콘 밑에 sftp 아이콘이 생성된다. My Server를 누르는 순간 ftp 암호를 입력하라고 뜨게 되는데 암호를 입력을 하면 html폴더가 생성된다. 이 폴더가 웹에서 root폴더가 된다. 
+  - SFTP:Config 설정을 완료하면 extension 아이콘 밑에 sftp 아이콘이 생성된다. My Server를 누르는 순간 ftp 암호를 입력하라고 뜨게 되는데 암호를 입력을 하면 html폴더가 생성된다. 이 폴더가 웹에서 root폴더가 된다. 따라서 모든 폴더와 파일들은 html폴더 아래에 들어가게 된다. FTP 접속이 잘 되었다면 작업폴더에서 우클릭 후 download folder를 눌러서 서버에 있는 모든 구조와 파일들을 로컬로 가져오면 된다.  
 
   ![dothome](/assets/images/dothome_setting/sftpmenu.png)
 
@@ -173,7 +173,7 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
 #### 5. index.html 파일 작성 및 업로드
 
-- 생성된 html 폴더 아래에 index.html 파일을 생성한다. 파일 안에서 html이라고 쓰는 순간 기존에 설치했던 html snippet extension이 여러 html 템플릿을 옵션으로 주는데 그 중에 html:5 를 선택해준다. 
+- 작업폴더에서 html 폴더 아래에 index.html 파일을 생성한다. 파일 안에서 html이라고 쓰는 순간 기존에 설치했던 html snippet extension이 여러 html 템플릿을 옵션으로 주는데 그 중에 html:5 를 선택해준다. 
 
   ![dothome](/assets/images/dothome_setting/index1.png)
 
