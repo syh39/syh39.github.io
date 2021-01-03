@@ -133,23 +133,26 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 #### 2. 인코딩 설정
 
 - 에디터의 인코딩을 UTF-8로 설정한다 
+
 - VS code에서 파일-기본설정-설정으로 들어가서 'encoding'이라고 검색한 후 인코딩을 UTF-8로 설정해준다
 
-![dothome](/assets/images/dothome_setting/encoding.png)
+  ![dothome](/assets/images/dothome_setting/encoding.png)
 
 
 
 #### 3. VS code Extension 설치
 
 - HTML Snippets extension
+  
   - HTML 태그의 자동 완성 기능을 제공한다
-
-![dothome](/assets/images/dothome_setting/html.png)
+  
+    ![dothome](/assets/images/dothome_setting/html.png)
 
 - Sftp extension
+  
   - 로컬에서 웹페이지를 만들고 ftp 클라이언트를 이용하여 업로드 하는 과정 없이 VS code 내에서 ftp 설정 후 편집하는 즉시 ftp를 이용해서 업로드 할 수 있는 기능을 제공한다. 
-
-![dothome](/assets/images/dothome_setting/sftp.png)
+  
+    ![dothome](/assets/images/dothome_setting/sftp.png)
 
 
 
@@ -163,15 +166,16 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
   - F1키 ->  SFTP:Config 선택
 
-  ![dothome](/assets/images/dothome_setting/sftpconfig.png)
+    ![dothome](/assets/images/dothome_setting/sftpconfig.png)
 
   - host는 호스트 url, protocol은 ftp, port는 21, username은 ftp 아이디로 설정한 후 저장한다 
 
-  ![dothome](/assets/images/dothome_setting/sftpconfig2.png)
+    ![dothome](/assets/images/dothome_setting/sftpconfig2.png)
 
   - SFTP:Config 설정을 완료하면 extension 아이콘 밑에 sftp 아이콘이 생성된다. My Server를 누르는 순간 ftp 암호를 입력하라고 뜨게 되는데 암호를 입력을 하면 html폴더가 생성된다. 이 폴더가 웹에서 root폴더가 된다. 따라서 모든 폴더와 파일들은 html폴더 아래에 들어가게 된다. FTP 접속이 잘 되었다면 작업폴더에서 우클릭 후 download folder를 눌러서 서버에 있는 모든 구조와 파일들을 로컬로 가져오면 된다.  
 
-  ![dothome](/assets/images/dothome_setting/sftpmenu.png)
+    ![dothome](/assets/images/dothome_setting/sftpmenu.png)
+  
 
 
 
