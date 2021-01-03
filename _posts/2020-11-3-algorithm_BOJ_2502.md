@@ -38,13 +38,10 @@ toc_sticky: true
 
 > 구상
 
-![BOJ](/assets/images/BOJ/2502/1.jpg){:width="100%" height="50%"}
-
+<center><img src="/assets/images/BOJ/2502/1.jpg" width="500" height="500"></center>
 
 
 > 코드 테스트 결과
-
-![BOJ](/assets/images/BOJ/2502/2.jpg){: width="500" height="500"}
 
 <center><img src="/assets/images/BOJ/2502/2.jpg" width="500" height="500"></center>
 
