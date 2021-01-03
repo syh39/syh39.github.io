@@ -62,7 +62,7 @@ toc_sticky: true
 
   - SQL
 
-    \- Structured Query Language의 약어로 구조화된 질의를 위한 언어라는 뜻이다. 즉, DB에 질의(Query)하기 위한 언어이다.
+    - Structured Query Language의 약어로 구조화된 질의를 위한 언어라는 뜻이다. 즉, DB에 질의(Query)하기 위한 언어이다.
 
   - MySQL 특징 
 
@@ -117,7 +117,7 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
 #### 1. 웹 에디터로는 Visual Studio Code를 설치한다. 
 
-자신의 컴퓨터 OS에 맞는 버전의 VScode를 설치한다. 
+- 자신의 컴퓨터 OS에 맞는 버전의 VScode를 설치한다. 
 
 [Visual Studio Code 설치](https://code.visualstudio.com/download)
 
@@ -125,7 +125,10 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
 #### 2. 인코딩 설정
 
-에디터의 인코딩을 Utf-8로 설정한다. 
+- 에디터의 인코딩을 UTF-8로 설정한다 
+- VS code에서 파일-기본설정-설정으로 들어가서 'encoding'이라고 검색한 후 인코딩을 UTF-8로 설정해준다
+
+![dothome](/assets/images/dothome_setting/encoding.png)
 
 
 
@@ -136,7 +139,35 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 - Sftp extension
   - 로컬에서 웹페이지를 만들고 ftp 클라이언트를 이용하여 업로드 하는 과정 없이 VS code 내에서 ftp 설정 후 편집하는 즉시 ftp를 이용해서 업로드 할 수 있는 기능을 제공한다. 
 
+
+
+![dothome](/assets/images/dothome_setting/html.png)
+
+![dothome](/assets/images/dothome_setting/sftp.png)
+
+
+
 #### 4. 작업폴더 생성
+
+- 로컬에서 작업 후 서버에 업로드하기 위한 폴더이자 백업을 위한 폴더를 생성한다
+
+  ![dothome](/assets/images/dothome_setting/workfolder.png)
+
+- FTP를 이용해 현재 폴더와 서버를 연결하는 작업을 해준다
+
+  - F1키 ->  SFTP:Config 선택
+
+  ![dothome](/assets/images/dothome_setting/sftpconfig.png)
+
+  - host는 호스트 url, protocol은 ftp, port는 21, username은 ftp 아이디로 설정한 후 저장한다 
+
+  ![dothome](/assets/images/dothome_setting/sftpconfig2.png)
+
+  - 설정을 하면 extension 아이콘 밑에 sftp 아이콘이 생성된다. My Server를 누르는 순간 ftp 암호를 입력하라고 뜨게 되는데 암호를 입력을 하게 되면 html폴더가 생기는데 이 폴더가 웹에서 root폴더가 된다. 
+
+  ![dothome](/assets/images/dothome_setting/sftpmenu.png)
+
+
 
 
 
