@@ -98,7 +98,7 @@ toc_sticky: true
 
 ### 2. FTP 클라이언트 프로그램 설치(Filezilla)
 
-FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간의 파일을 송수신하는 프로그램을 의미한다. 파일이나 이미지 등 모두 서버로 업로드 되어야 웹이 동작하기 때문에 FTP 프로그램인 Filezilla client를 설치해준다. FTP 서버의 경우 이전에 신청했던 닷홈서버에서 이미 설치가 되어 있기 때문에 별도로 설치할 필요가 없다. 
+FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간의 파일을 송수신하는 프로그램을 의미한다. 파일이나 이미지 등 모두 서버로 업로드 되어야 웹이 동작하기 때문에 FTP 클라이언트 프로그램인 Filezilla client를 설치해준다. FTP 서버의 경우 이전에 신청했던 닷홈서버에서 이미 설치가 되어 있기 때문에 별도로 설치할 필요가 없다. 
 
 [Filezilla client 설치](https://filezilla-project.org/)
 
