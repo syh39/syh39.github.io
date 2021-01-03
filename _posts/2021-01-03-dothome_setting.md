@@ -190,6 +190,9 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
 ### 참고링크
 
-<https://winteri-i.tistory.com/1>
-<https://winteri-i.tistory.com/2>
-<https://winteri-i.tistory.com/3>
+- <https://winteri-i.tistory.com/1>
+- <https://winteri-i.tistory.com/2>
+- <https://winteri-i.tistory.com/3>
+
+
+
