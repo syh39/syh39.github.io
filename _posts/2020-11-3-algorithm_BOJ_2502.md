@@ -38,7 +38,7 @@ toc_sticky: true
 
 > 구상
 
-![BOJ](/assets/images/BOJ/2502/1.jpg){:height="50%"}
+![BOJ](/assets/images/BOJ/2502/1.jpg){:width="100%" height="50%"}
 
 
 
