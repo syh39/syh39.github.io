@@ -169,9 +169,15 @@ FTP란 File Transfer Protocol의 약자로 사용자 PC와 호스팅 서버 간�
 
 
 
-
-
 #### 5. index.html 파일 작성 및 업로드
 
+- 생성된 html 폴더 아래에 index.html 파일을 생성한다. 이때 파일에 html이라고 쓰는 순간 html snippet extensiondl 여러 html 템플릿을 옵션으로 주는데 그 중에 html:5 를 선택해준다. 
 
+  ![dothome](/assets/images/dothome_setting/index1.png)
+
+- 파일을 다 작성 후 파일 이름에 우클릭 후 upload를 누르고 sftp메뉴에서 새로고침을 하면 서버에 업로드 되게 된다. 
+
+  ![dothome](/assets/images/dothome_setting/index2.png)
+
+  ![dothome](/assets/images/dothome_setting/dothomeresult.png)
 
