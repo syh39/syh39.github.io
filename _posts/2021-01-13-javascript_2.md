@@ -264,9 +264,20 @@ let x = 2;       // Allowed
 
 ### Const
 
-Const는 let과 동일한 성질을 가지는데 let과 다른점은 재선언이 안된다. 
+Const는 let과 동일한 성질을 가지는데 let과 다른점은 재할당이 안된다. 
 
 ~~~javascript
+// let
+let a = 'test'
+let a = 'test2' // 재선언 불가능
+a = 'test3'     // 재할당 가능
+
+// const
+const b = 'test'
+const b = 'test2' // 재선언 불가능
+b = 'test3'    // 재할당 불가능
+/* ------------------------------------------------------------- */
+
 const PI;
 PI = 3.14159265359; // (X)
 
@@ -343,12 +354,171 @@ const x = 2;       // Allowed
 
 ### Classes
 
+자바스크립트에선 class 키워드로 클래스를 만들 수 있다. 
+
+~~~html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class Method</h2>
+<p>Define a Class method and pass a parameter into the "age()" method.</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  } // Constructior
+  age(x) {
+    return x - this.year;
+  } // Class method
+}
+
+let date = new Date();
+let year = date.getFullYear();
+
+let myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML=
+"My car is " + myCar.age(year) + " years old.";
+</script>
+
+</body>
+</html>
+~~~
+
+[연습 링크](https://www.w3schools.com/js/tryit.asp?filename=tryjs_class_method)
+
+
+
+### Arrow Function
+
+Arrow Function은 함수를 더 간편하게 쓸 수 있는 자바스크립트 문법이다.
+
+~~~javascript
+hello = function() {
+  return "Hello World!";
+}  // 기존 방식
+
+hello = () => {
+  return "Hello World!";
+}  // Arrow function
+
+hello = () => "Hello World!"; // 함수 내용이 한줄인 경우 
+
+hello = (val) => "Hello " + val; // 한줄 함수 + 파라미터
+~~~
+
+
+
+### JSON
+
+JSON은 데이터를 저장하고 공유하는데에 쓰이는 포멧이다. JSON은 보통 서버에서 웹 페이지로 데이터가 전달될 때 사용된다. 
+
+- JSON 은 **J**ava**S**cript **O**bject **N**otation의 약자이다.
+- JSON 가벼운 데이터 공유 포멧이다.
+- JSON 언어의 관계없이 사용될 수 있다. 
+- JSON 은"self-describing"되는 이해하기 쉬운 언어이다.
+
+\* JSON 문법은 자바스크립트로부터 왔지만 JSON 포멧은 텍스트 기반이다. JSON 데이터를 읽고 쓰는 코드는 모든 프로그래밍 언어에서 가능하다. 
+
+**JSON 기본 문법**
+
+- JSON 데이터는 ''이름/값'' 이 한 쌍으로 이루어져 있다.
+- 데이터들은 콤마로 구분뒨다.
+- 중괄호는 object를 담는다.
+- 대괄호는 배열을 담는다. 
+
+**JSON Data**
+
+자바스크립트의 오브젝트 속성처럼 '이름/값'으로 이루어져 있고 <"필드이름" : "값">의 형식이다. 
+
+~~~javascript
+"firstName":"John"
+~~~
+
+**JSON Objects**
+
+중괄호로 묶이고 자바스크립트와 동일하게 여러개의 '이름/값'을 가질 수 있다.
+
+~~~javascript
+{"firstName":"John", "lastName":"Doe"}
+~~~
+
+**JSON Arrays**
+
+대괄호로 묶이고 자바스크립트와 동일하게 배열은 여러개의 오브젝트를 가질 수 있다. 아래 예시는 employees라는 이름의 배열이다. 
+
+~~~javascript
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+~~~
+
+**사용 예시**
+
+~~~javascript
+var text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+// 위와가튼 JSON 텍스트가 있다고 하면
+
+var obj = JSON.parse(text);
+// 이렇게 'JSON.parse()' 라는 자바스크립트 함수로 object로 변환할 수 있다. 
+~~~
+
 
 
 ### Forms
 
+HTML Form Validation은 자바스크립트에서도 가능하다. 
 
+~~~html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Can Validate Input</h2>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // If x is Not a Number or less than one or greater than 10
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
+~~~
+
+[연습 링크](https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_number)
 
 
 
 - [W3Schools Source](https://www.w3schools.com/js/js_examples.asp)
+
+- [참고 출저](https://gist.github.com/LeoHeo/7c2a2a6dbcf80becaaa1e61e90091e5d)
+
