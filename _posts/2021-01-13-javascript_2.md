@@ -77,14 +77,21 @@ try 블락 안에는 시도하고자 하는 코드가 들어가는데 이때 에
 자바스크립트에선 미리 정의되어있는 에러들이 존재한다. (EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError)
 
 >try {
-> *Block of code to try
->*}
+>
+> Block of code to try
+>
+>}
 >catch(*err*) {
-> *Block of code to handle errors
->*}
+>
+> Block of code to handle errors
+>
+>}
+>
 >finally {
-> *Block of code to be executed regardless of the try / catch result
->*}
+>
+> Block of code to be executed regardless of the try / catch result
+>
+>}
 
 ~~~html
 <!DOCTYPE html>
