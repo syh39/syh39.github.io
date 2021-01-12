@@ -404,14 +404,12 @@ document.getElementById("demo").innerHTML = person.fullName();  // sets "John Do
 
 ### Methods
 
-- String Methods
+**String Methods**
 
 ~~~javascript
 var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var sln = txt.length; // length라는 속성은 해당 string의 길이를 리턴한다
 ~~~
-
-- Other String Methods
 
 charAt(index) - 문자열에서 인덱스 번호에 해당하는 문자 반환.
 indexOf("찾을 문자") - 문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 최초로 일치하는 문자의 인덱스 번호를 반환. 찾는 문자가 없으면 -1 반환.
@@ -438,8 +436,6 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.join(" * ");   // Banana * Orange * Apple * Mango
 ~~~
 
-- Other Array Methods
-
 join(연결문자) - 배열 객체에 데이터를 연결 문자 기준으로 1개의 문자형 데이터로 반환.
 reverse() - 배열 객체에 데이터의 순서를 거꾸로 바꾼 후 반환.
 sort() - 배열 객체에 데이터를 오름차순으로 정렬.
@@ -452,9 +448,7 @@ shift() - 배열 객체에 저장된 데이터 중 첫 번째 인덱스에 저�
 unshift(new data) - 배열 객체의 가장 앞의 인덱스에 새 데이터를 삽입.
 length - 배열에 저장된 총 데이터의 개수를 반환.
 
-
-
-#### Math Methods
+**Math Methods**
 
 Math.abs(숫자) - 숫자의 절댓값을 반환.
 Math.max(숫자1, 숫자2, 숫자3) - 숫자 중 최댓값을 반환.
@@ -467,9 +461,7 @@ Math.floor(숫자) - 소수점 첫째 자리에서 무조건 내림해서 정수
 Math.sqrt(숫자) - 숫자의 제곱근 값을 반환.
 Math.PI - 원주율 상수를 반환.
 
-
-
-#### Window Object Methods
+**Window Object Methods**
 
 - 윈도우 객체는 브라우저 객체 모델(BOM - 브라우저에 내장된 객체)의 최상위 객체이다
 
