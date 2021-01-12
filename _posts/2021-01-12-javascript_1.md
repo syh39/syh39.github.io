@@ -52,7 +52,7 @@ toc_sticky: true
 
 #### head 안
 
-~~~Javascript
+~~~html
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,7 +75,7 @@ function myFunction() {
 
 #### body 안
 
-~~~javascript
+~~~html
 <!DOCTYPE html>
 <html>
 <body>
@@ -96,7 +96,7 @@ function myFunction() {
 
 #### 외부 파일
 
-~~~javascript
+~~~html
 <!DOCTYPE html>
 <html>
 <body>
@@ -116,7 +116,7 @@ function myFunction() {
 
 #### 외부 URL
 
-~~~javascript
+~~~html
 <!DOCTYPE html>
 <html>
 <body>
@@ -135,7 +135,7 @@ function myFunction() {
 
 #### 외부 폴더
 
-~~~javascript
+~~~html
 <!DOCTYPE html>
 <html>
 <body>
@@ -296,7 +296,7 @@ typeof function myFunc(){}   // Returns "function"
 >  // *code to be executed*
 > }
 
-~~~javascript
+~~~html
 <h2>JavaScript Functions</h2>
 <p>This example calls a function which performs a calculation and returns the result:</p>
 
@@ -350,7 +350,7 @@ person["lastName"]; // 방법 2
 
 Object의 속성으로 함수를 포함할 수 있는데 함수 사용시 'this'라는 키워드는 이 함수의 주인, 즉, person object를 의미한다. 따라서 this.firstName이라는 표현은 현재 person object의 firstName 속성을 의미한다.  
 
-```javascript
+```html
 <h2>JavaScript Objects</h2>
 <p>An object method is a function definition, stored as a property value.</p>
 
@@ -440,8 +440,6 @@ var sln = txt.length; // length라는 속성은 해당 string의 길이를 리�
 ~~~javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.join(" * ");   // Banana * Orange * Apple * Mango
-
-
 ~~~
 
 ##### Other Array Methods
@@ -564,7 +562,7 @@ switch (new Date().getDay()) {
 >  // *code block to be executed*
 > }
 
-~~~javascript
+~~~html
 <p id="demo"></p>
 
 <script>
@@ -582,7 +580,7 @@ document.getElementById("demo").innerHTML = text;
 
 Object에서 속성들을 차례로 참조할 때 사용한다
 
-~~~javascript
+~~~html
 <p id="demo"></p>
 
 <script>
@@ -600,7 +598,7 @@ document.getElementById("demo").innerHTML = txt;
 
 Array, String, Map, NodeList 등에서 사용 가능하다
 
-~~~javascript
+~~~html
 <p>The for/of statement loops through the values of an iterable object.</p>
 
 <script>
@@ -619,7 +617,7 @@ for (x of cars) {
 > *// code block to be executed*
 >}
 
-~~~javascript
+~~~html
 <p id="demo"></p>
 
 <script>
@@ -642,7 +640,7 @@ document.getElementById("demo").innerHTML = text;
 >*}
 >while (*condition);
 
-~~~javascript
+~~~html
 <p id="demo"></p>
 
 <script>
