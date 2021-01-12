@@ -7,7 +7,7 @@ categories:
 tags:
   - Web
   - Javascript
-last_modified_at: 2020-09-13 
+last_modified_at: 2021-01-12 
 toc: true
 toc_label: "Contents"
 toc_icon: "cog"
@@ -429,7 +429,7 @@ charCodeAt("찾을 문자") - 찾을 문자의 아스키 코드 값을 반환.
 fromCharCode(아스키 코드 값) - 아스키 코드 값에 해당하는 문자를 반환.
 trim() - 문자의 앞 또는 뒤에 공백 문자열을 삭제.
 
-#### Array Methods
+**Array Methods**
 
 ~~~javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
