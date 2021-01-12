@@ -1,5 +1,5 @@
 ---
-title:  "닷홈을 이용한 APM 웹개발 환경 설정"
+title:  "닷홈을 이용한 웹 호스팅 환경 설정"
 excerpt: ""
 
 categories:

@@ -6,7 +6,7 @@ categories:
   - Web
 tags:
   - Web
-  - HTML
+  - Javascript
 last_modified_at: 2020-09-13 
 toc: true
 toc_label: "Contents"
@@ -320,6 +320,8 @@ function myFunction(a, b) {
 
 오브젝트는 여러 값들을 넣을 수 있는 변수라고 할 수 있다. 
 
+####  Object
+
 ~~~javascript
 var car = "Fiat"; // simple value
 
@@ -331,45 +333,333 @@ var person = {
   age: 50,
   eyeColor: "blue"
 }; // Object에서 value들을 담는 변수 이름들을 property(속성)라고 한다. 
-
-/* Object property에 접근하는 두가지 방법 */
-person.lastName;    // 방법 1
-person["lastName"]; // 방법 2
 ~~~
 
 
 
 #### Object property에 접근하는 두가지 방법
 
->person.lastName;   
->person["lastName"]; 
+```javascript
+person.lastName;    // 방법 1
+person["lastName"]; // 방법 2
+```
+
+
+
+#### Object Methods
+
+Object의 속성으로 함수를 포함할 수 있는데 함수 사용시 'this'라는 키워드는 이 함수의 주인, 즉, person object를 의미한다. 따라서 this.firstName이라는 표현은 현재 person object의 firstName 속성을 의미한다.  
+
+```javascript
+<h2>JavaScript Objects</h2>
+<p>An object method is a function definition, stored as a property value.</p>
+
+<p id="demo"></p>  
+// Shows "John Doe"
+
+<script>
+// Create an object:
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;  // Returns "John Doe"
+  }
+};
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.fullName();  // sets "John Doe to 'demo' id"
+</script>
+```
+
+
 
 ### Events
 
+이벤트란 HTML 요소에 '어떤 일'이 일어나는 걸 의미한다. 자바스크립트는 그 '어떤 일'들에 대해 '반응' 할 수 있다. 
 
+> 1. HTML 페이지가 로딩이 완료되었을 때 
+> 2. HTML input field가 변했을 떄 
+> 3. HTML 버튼이 눌렸을 때 
 
-### Objects
+자바스크립트는 이러한 이벤트들이 감지 되었을 때 특정 반응을 줄 수 있다. 
 
+~~~javascript
+<button onclick="this.innerHTML = Date()">The time is?</button>
+<button onclick="displayDate()">The time is?</button>
+// 버튼이 눌렸을 때 시간을 표시해준다
+~~~
 
+#### 흔히 쓰이는 이벤트들
+
+- onchange : HTML 요소의 변화가 생겼을 때 
+
+- onclick : HTML 요소가 클릭되었을 때 
+
+- onmouseover :  HTML 요소위로 마우스가 들어왔을 때 
+
+- onmouseout  :  HTML 요소 밖으로 마우스가 나갔을 때
+
+- onkeydown : 사용자가 키보드 키를 눌렀을 때 
+
+- onload : 브라우저가 페이지 로딩을 완료했을 때 
+
+  
 
 ### Methods
+
+#### String Methods
+
+~~~javascript
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length; // length라는 속성은 해당 string의 길이를 리턴한다
+~~~
+
+##### Other String Methods
+
+> charAt(index) - 문자열에서 인덱스 번호에 해당하는 문자 반환.
+> indexOf("찾을 문자") - 문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 최초로 일치하는 문자의 인덱스 번호를 반환. 찾는 문자가 없으면 -1 반환.
+> lastIndexOf("찾을 문자") - indexOf와 동일하나 문자열의 오른쪽부터 찾음.
+> match("찾을 문자") - indexOf와 동일하나 찾는 문자가 없으면 null을 반환.
+> replace("바꿀 문자", "새 문자") - 문자열에서 왼쪽부터 바꿀 문자와 일치하는 문자를 찾아 최초로 찾은 문자를 새 문자로 치환.
+> search("찾을 문자") - 문자열 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 최초로 일치하는 인덱스 번호를 반환.
+> slice(a, b) - a개의 문자를 자르고 b번째 이후에 문자를 자른 후 남은 문자를 반환.
+> substring(a, b) - a 인덱스부터 b 인덱스 이전 구간의 문자를 반환.
+> substr(a, 문자 개수) - 문자열에 a 인덱스부터 지정한 문자 개수만큼 문자열을 반환.
+> split("문자") - 지정한 문자를 기준으로 문자 데이터를 나누어 배열에 저장하여 반환.
+> toLowerCase() - 문자열에서 영문 대문자를 모두 소문자로 바꿈.
+> toUpperCase() - 문자열에서 영문 소문자를 모두 대문자로 바꿈.
+> length - 문자열에서 문자의 개수를 반환.
+> concat("새로운 문자") - 문자열에 새로운 문자열을 결합.
+> charCodeAt("찾을 문자") - 찾을 문자의 아스키 코드 값을 반환.
+> fromCharCode(아스키 코드 값) - 아스키 코드 값에 해당하는 문자를 반환.
+> trim() - 문자의 앞 또는 뒤에 공백 문자열을 삭제.
+
+#### Array Methods
+
+~~~javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.join(" * ");   // Banana * Orange * Apple * Mango
+
+
+~~~
+
+##### Other Array Methods
+
+>join(연결문자) - 배열 객체에 데이터를 연결 문자 기준으로 1개의 문자형 데이터로 반환.
+>reverse() - 배열 객체에 데이터의 순서를 거꾸로 바꾼 후 반환.
+>sort() - 배열 객체에 데이터를 오름차순으로 정렬.
+>slice(index1, index2) - 배열 객체에 데이터 중 원하는 인덱스 구간만큼 잘라서 배열 객체로 가져옴.
+>splice() - 배열 객체에 지정 데이터를 삭제하고 그 구간에 새 데이터를 삽입할 수 있음.
+>concat() - 2개의 배열 객체를 하나로 결합.
+>pop() - 배열에 저장된 데이터 중 마지막 인덱스에 저장된 데이터 삭제.
+>push(new data) - 배열 객체에 마지막 인덱스에 새 데이터를 삽입.
+>shift() - 배열 객체에 저장된 데이터 중 첫 번째 인덱스에 저장된 데이터를 삭제.
+>unshift(new data) - 배열 객체의 가장 앞의 인덱스에 새 데이터를 삽입.
+>length - 배열에 저장된 총 데이터의 개수를 반환.
+
+
+
+#### Math Methods
+
+> Math.abs(숫자) - 숫자의 절댓값을 반환.
+> Math.max(숫자1, 숫자2, 숫자3) - 숫자 중 최댓값을 반환.
+> Math.min(숫자1, 숫자2, 숫자3) - 숫자 중 최솟값을 반환.
+> Math.pow(숫자, 제곱값) - 숫자의 거듭제곱한 값을 반환.
+> Math.random() - 0~1 사이의 난수를 반환.
+> Math.round(숫자) - 소수점 첫째 자리에서 반올림하여 정수를 반환.
+> Math.ceil(숫자) - 소수점 첫째 자리에서 무조건 올림에서 정수를 반환.
+> Math.floor(숫자) - 소수점 첫째 자리에서 무조건 내림해서 정수를 반환.
+> Math.sqrt(숫자) - 숫자의 제곱근 값을 반환.
+> Math.PI - 원주율 상수를 반환.
+
+
+
+#### Window Object Methods
+
+- 윈도우 객체는 브라우저 객체 모델(BOM - 브라우저에 내장된 객체)의 최상위 객체이다
+
+> open("url 경로", "창 이름", "옵션 설정") - 새 창을 열 때 사용.(open() 메서드 옵션 설정: width/height/left/top/location/status/scrollbars/tollbars)
+> alert("메세지") - 경고 창을 띄움.
+> prompt("질의 내용", "기본 답변") - 질의응답 창을 띄움.
+> confirm("질의 내용") - 확인/취소 창을 띄움.(확인 클릭시 true 반환, 취소 클릭시 false 반환.)
+> moveTo(x 위치값, y 위치값) - 창의 위치를 이동시킬 때 사용.
+> resizeTo(너빗값, 높잇값) - 창의 크기를 변경시킬 때 사용.
+> setInterval("스크립트 실행문", 시간 간격) - 일정 간격으로 반복하여 실행문을 실행시킬 때 사용.
+> clearIntervar(참조 변수) - 참조 변수에 참조되어 있는 setInterval() 삭제.
+> setTimeout("스크립트 실행문", 시간 간격) - 일정 간격으로 한 번만 실행문을 실행시킬 때 사용.
+> clearTimeout(참조 변수) - 참조 변수에 참조되어 있던 setTimeout() 삭제.
+
+[Method 더보기](https://www.theteams.kr/teams/2440/post/67294)
 
 
 
 ### Conditions
 
+기본적으로 자바스크립트에서 조건문은 C언어와 문법이 동일하다.
 
+#### If - else
+
+> if (*condition1*) {
+>  // *block of code to be executed if condition1 is true
+> *} else if (*condition2*) {
+>  // *block of code to be executed if the condition1 is false and condition2 is true*
+> } else {
+>  // *block of code to be executed if the condition1 is false and condition2 is false
+> *}
+
+~~~javascript
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+~~~
+
+
+
+#### Switch
+
+> switch(*expression*) {
+>  case *x*:
+>   *// code block
+> \*  break;
+>  case *y*:
+>   *// code block
+> \*  break;
+>  default:
+>    // *code block*
+> }
+
+~~~javascript
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+~~~
 
 
 
 ### Loops
 
+자바스크립트에선 여러 종류의 반복문을 지원한다. 
+
+- `for` - loops through a block of code a number of times
+- `for/in` - loops through the properties of an object
+- `for/of` - loops through the values of an iterable object
+- `while` - loops through a block of code while a specified condition is true
+- `do/while` - also loops through a block of code while a specified condition is true
+
+#### For
+
+> for (*statement 1*; *statement 2*; *statement 3*) {
+>  // *code block to be executed*
+> }
+
+~~~javascript
+<p id="demo"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+~~~
+
+#### For/in
+
+Object에서 속성들을 차례로 참조할 때 사용한다
+
+~~~javascript
+<p id="demo"></p>
+
+<script>
+var txt = "";
+var person = {fname:"John", lname:"Doe", age:25}; 
+var x;
+for (x in person) {
+  txt += person[x] + " ";
+}
+document.getElementById("demo").innerHTML = txt;
+</script>
+~~~
+
+#### For/of
+
+Array, String, Map, NodeList 등에서 사용 가능하다
+
+~~~javascript
+<p>The for/of statement loops through the values of an iterable object.</p>
+
+<script>
+var cars = ["BMW", "Volvo", "Mini"];
+var x;
+
+for (x of cars) {
+  document.write(x + "<br >");
+}
+</script>
+~~~
+
+#### While
+
+>while (*condition*) {
+> *// code block to be executed*
+>}
+
+~~~javascript
+<p id="demo"></p>
+
+<script>
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+~~~
+
+
+
+#### Do/While
+
+>do {
+> // code block to be executed
+>*}
+>while (*condition);
+
+~~~javascript
+<p id="demo"></p>
+
+<script>
+var text = ""
+var i = 0;
+
+do {
+  text += "<br>The number is " + i;
+  i++;
+}
+while (i < 10);
+document.getElementById("demo").innerHTML = text;
+</script>
+~~~
 
 
 
 
 
-
-
-
-[정리 Source](https://www.w3schools.com/js/js_examples.asp)
+[W3Schools Source](https://www.w3schools.com/js/js_examples.asp)
