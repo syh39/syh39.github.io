@@ -1,6 +1,6 @@
 ---
 title:  "용어 및 개념 정리"
-excerpt: ""
+excerpt: "용어들"
 
 categories:
   - Blog
