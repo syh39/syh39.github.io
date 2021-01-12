@@ -1,5 +1,5 @@
 ---
-title:  "HTML 정리"
+title:  "Javascript 정리 1"
 excerpt: ""
 
 categories:
@@ -16,30 +16,53 @@ toc_sticky: true
 
 
 
-### HTML의 정의
+### Javascript란
 
-- HTML은 'Hyper Text Markup Language'의 약자이다
-- HTML은 웹 페이지를 만들기 위한 Markup Language이다
-- HTML은 웹 페이지의 구조를 표현한다
-- HTML은 여러 요소(element)들로 구성되어 있다
-- HTML의 여러 요소들은 브라우저에게 콘텐츠를 어떻게 보여줄 지 결정한다 
+- Javascript는 객체 기반의 [스크립트 프로그래밍 언어](https://ko.wikipedia.org/wiki/스크립트_언어)이다
+- Javascript는 웹의 프로그래밍 언어이다 
+- Javascript는 세계에서 가장 인기가 많은 언어이다
 
 
-### HTML의 구조
 
-~~~html
+### HTML / CSS / Javascript 의 관계
+
+#### HTML 
+
+- 웹의 구조를 담당하며 웹페이지에서 제목, 이미지, 동영상, 문단, 표 등을 정의하는 정적 언어이다.
+- 웹의 **구조**를 담당한다.
+
+#### CSS 
+
+- 마크업 언어(HTML, XML, XHML 등)가 실제 표시되는 방법(색상, 레이아웃, 크기, 폰트 등)을 지정하여 콘텐츠 구조를 꾸며주는 정적 언어이다.
+- 웹의 **스타일**을 담당한다.
+
+#### Javascript 
+
+- HTML 문서의 정적이고 단조로운 한계를 극복하기 위하여 Netscape사가 만든 Livescript가 이름이 변경된 것으로 브라우저 자체에서 내장된 해석기능을 이용한 클라이언트 기반의 스크립트 언어이다.
+
+- 콘텐츠를 바꾸고 움직이는 등 페이지를 동적으로 꾸며주는 역할을 하는 프로그래밍 언어이다.
+
+- 웹의 **동적 처리**(HTML 요소의 내용 변경, HTML 요소의 속성 변경, CSS 스타일 변경, HTML 요소 숨기기, HTML 요소 보이기 등)를 담당한다.
+
+  
+
+### Javascript 코드의 위치
+
+자바스크립트 코드는 'script'라는 태그 안에 적게 되는데 HTML 문서 안에서 여러 위치에 존재할 수 있다.
+
+~~~Javascript
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>  
 </html>
+
+
 ~~~
 
 - `<!DOCTYPE html>` 선언문은 이 문서가 HTML5 문서라는 것을 보여준다
