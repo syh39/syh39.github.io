@@ -1,6 +1,6 @@
 ---
 title:  "Javascript 정리 2"
-excerpt: ""
+excerpt: "자바스크립트에서 변수들은 다른 종류의 변수로 변환(함수사용 or 자동)될 수 있다."
 
 categories:
   - Web

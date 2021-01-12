@@ -1,6 +1,6 @@
 ---
 title:  "Spring Framework"
-excerpt: ""
+excerpt: "Framework는 애플리케이션 개발에 바탕이 되는 템플릿과 같은 역할을 하는 클래스들과 인터페이스, 라이브러리의 집합이라고 할 수 있다. "
 
 categories:
   - Spring

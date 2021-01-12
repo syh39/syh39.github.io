@@ -1,6 +1,6 @@
 ---
 title:  "닷홈을 이용한 웹 호스팅 환경 설정"
-excerpt: ""
+excerpt: "우리가 매일 사용하고 있는 인터넷을 구성하는 시스템을 웹 시스템(web system)이라고 한다."
 
 categories:
   - Web

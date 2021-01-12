@@ -1,6 +1,6 @@
 ---
 title:  "Javascript 정리 1"
-excerpt: ""
+excerpt: "Javascript는 웹의 프로그래밍 언어이다 "
 
 categories:
   - Web

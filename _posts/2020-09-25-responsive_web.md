@@ -1,6 +1,6 @@
 ---
 title:  "Responsive Web"
-excerpt: ""
+excerpt: "Responsive Web은 데스크탑, 스마트폰, 태블릿같이 다양한 기기에서 사용자가 웹사이트를 사용하기 편하고 보기 좋게 바꿔주는 기술이다."
 
 categories:
   - Web

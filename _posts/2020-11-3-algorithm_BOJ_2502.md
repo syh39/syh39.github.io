@@ -1,6 +1,6 @@
 ---
 title:  "[백준 2502번] 떡먹는 호랑이"
-excerpt: ""
+excerpt: "이 문제는 식을 세우고 나서 코드로 구현하는게 핵심인 문제이다."
 
 categories:
   - Algorithm
