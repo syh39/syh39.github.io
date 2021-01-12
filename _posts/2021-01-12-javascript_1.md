@@ -630,8 +630,8 @@ document.getElementById("demo").innerHTML = text;
 >
 >*}*
 >
->*
->while (*condition);
+>
+>while (condition);
 
 ~~~html
 <p id="demo"></p>
