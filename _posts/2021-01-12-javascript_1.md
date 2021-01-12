@@ -293,8 +293,10 @@ typeof function myFunc(){}   // Returns "function"
 자바스크립트에서 함수는 이런 문법을 가진다.
 
 >  function *name*(*parameter1, parameter2, parameter3*) {
+>
 >  // *code to be executed*
-> }
+>
+>  }
 
 ~~~html
 <h2>JavaScript Functions</h2>
