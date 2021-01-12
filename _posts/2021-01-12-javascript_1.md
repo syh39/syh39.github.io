@@ -18,8 +18,8 @@ toc_sticky: true
 
 ### Javascript란
 
-- Javascript는 객체 기반의 [스크립트 프로그래밍 언어](https://ko.wikipedia.org/wiki/스크립트_언어)이다
 - Javascript는 웹의 프로그래밍 언어이다 
+- Javascript는 객체 기반의 [스크립트 프로그래밍 언어](https://ko.wikipedia.org/wiki/스크립트_언어)이다
 - Javascript는 세계에서 가장 인기가 많은 언어이다
 
 
