@@ -429,6 +429,8 @@ var sln = txt.length; // length라는 속성은 해당 string의 길이를 리�
 - fromCharCode(아스키 코드 값) - 아스키 코드 값에 해당하는 문자를 반환.
 - trim() - 문자의 앞 또는 뒤에 공백 문자열을 삭제.
 
+
+
 **Array Methods**
 
 ~~~javascript
@@ -448,6 +450,8 @@ fruits.join(" * ");   // Banana * Orange * Apple * Mango
 - unshift(new data) - 배열 객체의 가장 앞의 인덱스에 새 데이터를 삽입.
 - length - 배열에 저장된 총 데이터의 개수를 반환.
 
+
+
 **Math Methods**
 
 - Math.abs(숫자) - 숫자의 절댓값을 반환.
@@ -460,6 +464,8 @@ fruits.join(" * ");   // Banana * Orange * Apple * Mango
 - Math.floor(숫자) - 소수점 첫째 자리에서 무조건 내림해서 정수를 반환.
 - Math.sqrt(숫자) - 숫자의 제곱근 값을 반환.
 - Math.PI - 원주율 상수를 반환.
+
+
 
 **Window Object Methods**
 
@@ -653,6 +659,6 @@ document.getElementById("demo").innerHTML = text;
 
 
 
-
-
 - [W3Schools Source](https://www.w3schools.com/js/js_examples.asp)
+
+- [참고 출저](https://www.theteams.kr/teams/2440/post/67294)
