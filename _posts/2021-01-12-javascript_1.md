@@ -411,23 +411,23 @@ var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var sln = txt.length; // length라는 속성은 해당 string의 길이를 리턴한다
 ~~~
 
-charAt(index) - 문자열에서 인덱스 번호에 해당하는 문자 반환.
-indexOf("찾을 문자") - 문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 최초로 일치하는 문자의 인덱스 번호를 반환. 찾는 문자가 없으면 -1 반환.
-lastIndexOf("찾을 문자") - indexOf와 동일하나 문자열의 오른쪽부터 찾음.
-match("찾을 문자") - indexOf와 동일하나 찾는 문자가 없으면 null을 반환.
-replace("바꿀 문자", "새 문자") - 문자열에서 왼쪽부터 바꿀 문자와 일치하는 문자를 찾아 최초로 찾은 문자를 새 문자로 치환.
-search("찾을 문자") - 문자열 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 최초로 일치하는 인덱스 번호를 반환.
-slice(a, b) - a개의 문자를 자르고 b번째 이후에 문자를 자른 후 남은 문자를 반환.
-substring(a, b) - a 인덱스부터 b 인덱스 이전 구간의 문자를 반환.
-substr(a, 문자 개수) - 문자열에 a 인덱스부터 지정한 문자 개수만큼 문자열을 반환.
-split("문자") - 지정한 문자를 기준으로 문자 데이터를 나누어 배열에 저장하여 반환.
-toLowerCase() - 문자열에서 영문 대문자를 모두 소문자로 바꿈.
-toUpperCase() - 문자열에서 영문 소문자를 모두 대문자로 바꿈.
-length - 문자열에서 문자의 개수를 반환.
-concat("새로운 문자") - 문자열에 새로운 문자열을 결합.
-charCodeAt("찾을 문자") - 찾을 문자의 아스키 코드 값을 반환.
-fromCharCode(아스키 코드 값) - 아스키 코드 값에 해당하는 문자를 반환.
-trim() - 문자의 앞 또는 뒤에 공백 문자열을 삭제.
+- charAt(index) - 문자열에서 인덱스 번호에 해당하는 문자 반환.
+- indexOf("찾을 문자") - 문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 최초로 일치하는 문자의 인덱스 번호를 반환. 찾는 문자가 없으면 -1 반환.
+- lastIndexOf("찾을 문자") - indexOf와 동일하나 문자열의 오른쪽부터 찾음.
+- match("찾을 문자") - indexOf와 동일하나 찾는 문자가 없으면 null을 반환.
+- replace("바꿀 문자", "새 문자") - 문자열에서 왼쪽부터 바꿀 문자와 일치하는 문자를 찾아 최초로 찾은 문자를 새 문자로 치환.
+- search("찾을 문자") - 문자열 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 최초로 일치하는 인덱스 번호를 반환.
+- slice(a, b) - a개의 문자를 자르고 b번째 이후에 문자를 자른 후 남은 문자를 반환.
+- substring(a, b) - a 인덱스부터 b 인덱스 이전 구간의 문자를 반환.
+- substr(a, 문자 개수) - 문자열에 a 인덱스부터 지정한 문자 개수만큼 문자열을 반환.
+- split("문자") - 지정한 문자를 기준으로 문자 데이터를 나누어 배열에 저장하여 반환.
+- toLowerCase() - 문자열에서 영문 대문자를 모두 소문자로 바꿈.
+- toUpperCase() - 문자열에서 영문 소문자를 모두 대문자로 바꿈.
+- length - 문자열에서 문자의 개수를 반환.
+- concat("새로운 문자") - 문자열에 새로운 문자열을 결합.
+- charCodeAt("찾을 문자") - 찾을 문자의 아스키 코드 값을 반환.
+- fromCharCode(아스키 코드 값) - 아스키 코드 값에 해당하는 문자를 반환.
+- trim() - 문자의 앞 또는 뒤에 공백 문자열을 삭제.
 
 **Array Methods**
 
@@ -436,45 +436,46 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.join(" * ");   // Banana * Orange * Apple * Mango
 ~~~
 
-join(연결문자) - 배열 객체에 데이터를 연결 문자 기준으로 1개의 문자형 데이터로 반환.
-reverse() - 배열 객체에 데이터의 순서를 거꾸로 바꾼 후 반환.
-sort() - 배열 객체에 데이터를 오름차순으로 정렬.
-slice(index1, index2) - 배열 객체에 데이터 중 원하는 인덱스 구간만큼 잘라서 배열 객체로 가져옴.
-splice() - 배열 객체에 지정 데이터를 삭제하고 그 구간에 새 데이터를 삽입할 수 있음.
-concat() - 2개의 배열 객체를 하나로 결합.
-pop() - 배열에 저장된 데이터 중 마지막 인덱스에 저장된 데이터 삭제.
-push(new data) - 배열 객체에 마지막 인덱스에 새 데이터를 삽입.
-shift() - 배열 객체에 저장된 데이터 중 첫 번째 인덱스에 저장된 데이터를 삭제.
-unshift(new data) - 배열 객체의 가장 앞의 인덱스에 새 데이터를 삽입.
-length - 배열에 저장된 총 데이터의 개수를 반환.
+- join(연결문자) - 배열 객체에 데이터를 연결 문자 기준으로 1개의 문자형 데이터로 반환.
+- reverse() - 배열 객체에 데이터의 순서를 거꾸로 바꾼 후 반환.
+- sort() - 배열 객체에 데이터를 오름차순으로 정렬.
+- slice(index1, index2) - 배열 객체에 데이터 중 원하는 인덱스 구간만큼 잘라서 배열 객체로 가져옴.
+- splice() - 배열 객체에 지정 데이터를 삭제하고 그 구간에 새 데이터를 삽입할 수 있음.
+- concat() - 2개의 배열 객체를 하나로 결합.
+- pop() - 배열에 저장된 데이터 중 마지막 인덱스에 저장된 데이터 삭제.
+- push(new data) - 배열 객체에 마지막 인덱스에 새 데이터를 삽입.
+- shift() - 배열 객체에 저장된 데이터 중 첫 번째 인덱스에 저장된 데이터를 삭제.
+- unshift(new data) - 배열 객체의 가장 앞의 인덱스에 새 데이터를 삽입.
+- length - 배열에 저장된 총 데이터의 개수를 반환.
 
 **Math Methods**
 
-Math.abs(숫자) - 숫자의 절댓값을 반환.
-Math.max(숫자1, 숫자2, 숫자3) - 숫자 중 최댓값을 반환.
-Math.min(숫자1, 숫자2, 숫자3) - 숫자 중 최솟값을 반환.
-Math.pow(숫자, 제곱값) - 숫자의 거듭제곱한 값을 반환.
-Math.random() - 0~1 사이의 난수를 반환.
-Math.round(숫자) - 소수점 첫째 자리에서 반올림하여 정수를 반환.
-Math.ceil(숫자) - 소수점 첫째 자리에서 무조건 올림에서 정수를 반환.
-Math.floor(숫자) - 소수점 첫째 자리에서 무조건 내림해서 정수를 반환.
-Math.sqrt(숫자) - 숫자의 제곱근 값을 반환.
-Math.PI - 원주율 상수를 반환.
+- Math.abs(숫자) - 숫자의 절댓값을 반환.
+- Math.max(숫자1, 숫자2, 숫자3) - 숫자 중 최댓값을 반환.
+- Math.min(숫자1, 숫자2, 숫자3) - 숫자 중 최솟값을 반환.
+- Math.pow(숫자, 제곱값) - 숫자의 거듭제곱한 값을 반환.
+- Math.random() - 0~1 사이의 난수를 반환.
+- Math.round(숫자) - 소수점 첫째 자리에서 반올림하여 정수를 반환.
+- Math.ceil(숫자) - 소수점 첫째 자리에서 무조건 올림에서 정수를 반환.
+- Math.floor(숫자) - 소수점 첫째 자리에서 무조건 내림해서 정수를 반환.
+- Math.sqrt(숫자) - 숫자의 제곱근 값을 반환.
+- Math.PI - 원주율 상수를 반환.
 
 **Window Object Methods**
 
-- 윈도우 객체는 브라우저 객체 모델(BOM - 브라우저에 내장된 객체)의 최상위 객체이다
+윈도우 객체는 브라우저 객체 모델(BOM - 브라우저에 내장된 객체)의 최상위 객체이다
 
-open("url 경로", "창 이름", "옵션 설정") - 새 창을 열 때 사용.(open() 메서드 옵션 설정: width/height/left/top/location/status/scrollbars/tollbars)
-alert("메세지") - 경고 창을 띄움.
-prompt("질의 내용", "기본 답변") - 질의응답 창을 띄움.
-confirm("질의 내용") - 확인/취소 창을 띄움.(확인 클릭시 true 반환, 취소 클릭시 false 반환.)
-moveTo(x 위치값, y 위치값) - 창의 위치를 이동시킬 때 사용.
-resizeTo(너빗값, 높잇값) - 창의 크기를 변경시킬 때 사용.
-setInterval("스크립트 실행문", 시간 간격) - 일정 간격으로 반복하여 실행문을 실행시킬 때 사용.
-clearIntervar(참조 변수) - 참조 변수에 참조되어 있는 setInterval() 삭제.
-setTimeout("스크립트 실행문", 시간 간격) - 일정 간격으로 한 번만 실행문을 실행시킬 때 사용.
-clearTimeout(참조 변수) - 참조 변수에 참조되어 있던 setTimeout() 삭제.
+- open("url 경로", "창 이름", "옵션 설정") - 새 창을 열 때 사용.(open() 메서드 옵션 설정:
+- width/height/left/top/location/status/scrollbars/tollbars)
+- alert("메세지") - 경고 창을 띄움.
+- prompt("질의 내용", "기본 답변") - 질의응답 창을 띄움.
+- confirm("질의 내용") - 확인/취소 창을 띄움.(확인 클릭시 true 반환, 취소 클릭시 false 반환.)
+- moveTo(x 위치값, y 위치값) - 창의 위치를 이동시킬 때 사용.
+- resizeTo(너빗값, 높잇값) - 창의 크기를 변경시킬 때 사용.
+- setInterval("스크립트 실행문", 시간 간격) - 일정 간격으로 반복하여 실행문을 실행시킬 때 사용.
+- clearIntervar(참조 변수) - 참조 변수에 참조되어 있는 setInterval() 삭제.
+- setTimeout("스크립트 실행문", 시간 간격) - 일정 간격으로 한 번만 실행문을 실행시킬 때 사용.
+- clearTimeout(참조 변수) - 참조 변수에 참조되어 있던 setTimeout() 삭제.
 
 [Method 더보기](https://www.theteams.kr/teams/2440/post/67294)
 
@@ -545,7 +546,9 @@ switch (new Date().getDay()) {
 **For**
 
 > for (*statement 1*; *statement 2*; *statement 3*) {
->  // *code block to be executed*
+>
+> // *code block to be executed*
+>
 > }
 
 ~~~html
@@ -600,7 +603,9 @@ for (x of cars) {
 **While**
 
 >while (*condition*) {
-> *// code block to be executed*
+>
+>*// code block to be executed*
+>
 >}
 
 ~~~html
@@ -620,8 +625,12 @@ document.getElementById("demo").innerHTML = text;
 **Do/While**
 
 >do {
-> // code block to be executed
->*}
+>
+>// code block to be executed
+>
+>*}*
+>
+>*
 >while (*condition);
 
 ~~~html
