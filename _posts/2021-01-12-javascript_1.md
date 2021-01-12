@@ -26,17 +26,17 @@ toc_sticky: true
 
 ### HTML / CSS / Javascript 의 관계
 
-#### HTML 
+**HTML** 
 
 - 웹의 구조를 담당하며 웹페이지에서 제목, 이미지, 동영상, 문단, 표 등을 정의하는 정적 언어이다.
 - 웹의 **구조**를 담당한다.
 
-#### CSS 
+**CSS** 
 
 - 마크업 언어(HTML, XML, XHML 등)가 실제 표시되는 방법(색상, 레이아웃, 크기, 폰트 등)을 지정하여 콘텐츠 구조를 꾸며주는 정적 언어이다.
 - 웹의 **스타일**을 담당한다.
 
-#### Javascript 
+**Javascript** 
 
 - HTML 문서의 정적이고 단조로운 한계를 극복하기 위하여 Netscape사가 만든 Livescript가 이름이 변경된 것으로 브라우저 자체에서 내장된 해석기능을 이용한 클라이언트 기반의 스크립트 언어이다.
 
@@ -133,7 +133,7 @@ function myFunction() {
 
 ~~~
 
-#### 외부 폴더
+- 외부 폴더
 
 ~~~html
 <!DOCTYPE html>
@@ -386,32 +386,32 @@ document.getElementById("demo").innerHTML = person.fullName();  // sets "John Do
 // 버튼이 눌렸을 때 시간을 표시해준다
 ~~~
 
-#### 흔히 쓰이는 이벤트들
+- 흔히 쓰이는 이벤트들
 
-- onchange : HTML 요소의 변화가 생겼을 때 
+  - onchange : HTML 요소의 변화가 생겼을 때 
 
-- onclick : HTML 요소가 클릭되었을 때 
+  - onclick : HTML 요소가 클릭되었을 때 
 
-- onmouseover :  HTML 요소위로 마우스가 들어왔을 때 
+  - onmouseover :  HTML 요소위로 마우스가 들어왔을 때 
 
-- onmouseout  :  HTML 요소 밖으로 마우스가 나갔을 때
+  - onmouseout  :  HTML 요소 밖으로 마우스가 나갔을 때
 
-- onkeydown : 사용자가 키보드 키를 눌렀을 때 
+  - onkeydown : 사용자가 키보드 키를 눌렀을 때 
 
-- onload : 브라우저가 페이지 로딩을 완료했을 때 
+  - onload : 브라우저가 페이지 로딩을 완료했을 때 
 
   
 
 ### Methods
 
-#### String Methods
+- String Methods
 
 ~~~javascript
 var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var sln = txt.length; // length라는 속성은 해당 string의 길이를 리턴한다
 ~~~
 
-##### Other String Methods
+- Other String Methods
 
 charAt(index) - 문자열에서 인덱스 번호에 해당하는 문자 반환.
 indexOf("찾을 문자") - 문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 최초로 일치하는 문자의 인덱스 번호를 반환. 찾는 문자가 없으면 -1 반환.
@@ -438,7 +438,7 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.join(" * ");   // Banana * Orange * Apple * Mango
 ~~~
 
-##### Other Array Methods
+- Other Array Methods
 
 join(연결문자) - 배열 객체에 데이터를 연결 문자 기준으로 1개의 문자형 데이터로 반환.
 reverse() - 배열 객체에 데이터의 순서를 거꾸로 바꾼 후 반환.
@@ -492,7 +492,7 @@ clearTimeout(참조 변수) - 참조 변수에 참조되어 있던 setTimeout() 
 
 기본적으로 자바스크립트에서 조건문은 C언어와 문법이 동일하다.
 
-#### If - else
+**If - else**
 
 > if (*condition1*) {
 >  // *block of code to be executed if condition1 is true
@@ -512,9 +512,7 @@ if (time < 10) {
 }
 ~~~
 
-
-
-#### Switch
+**Switch**
 
 > switch(*expression*) {
 >  case *x*:
@@ -552,7 +550,7 @@ switch (new Date().getDay()) {
 - `while` - loops through a block of code while a specified condition is true
 - `do/while` - also loops through a block of code while a specified condition is true
 
-#### For
+**For**
 
 > for (*statement 1*; *statement 2*; *statement 3*) {
 >  // *code block to be executed*
@@ -572,7 +570,7 @@ document.getElementById("demo").innerHTML = text;
 </script>
 ~~~
 
-#### For/in
+**For/in**
 
 Object에서 속성들을 차례로 참조할 때 사용한다
 
@@ -590,7 +588,7 @@ document.getElementById("demo").innerHTML = txt;
 </script>
 ~~~
 
-#### For/of
+**For/of**
 
 Array, String, Map, NodeList 등에서 사용 가능하다
 
@@ -607,7 +605,7 @@ for (x of cars) {
 </script>
 ~~~
 
-#### While
+**While**
 
 >while (*condition*) {
 > *// code block to be executed*
@@ -627,9 +625,7 @@ document.getElementById("demo").innerHTML = text;
 </script>
 ~~~
 
-
-
-#### Do/While
+**Do/While**
 
 >do {
 > // code block to be executed
