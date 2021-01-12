@@ -50,7 +50,7 @@ toc_sticky: true
 
 자바스크립트 코드는 'script'라는 태그 안에 적게 되는데 HTML 문서 안에서 여러 위치에 존재할 수 있다.
 
-#### head 안
+- head 안
 
 ~~~html
 <!DOCTYPE html>
@@ -73,7 +73,7 @@ function myFunction() {
 
 ~~~
 
-#### body 안
+- body 안
 
 ~~~html
 <!DOCTYPE html>
@@ -94,7 +94,7 @@ function myFunction() {
 </html> 
 ~~~
 
-#### 외부 파일
+- 외부 파일
 
 ~~~html
 <!DOCTYPE html>
@@ -114,7 +114,7 @@ function myFunction() {
 
 ~~~
 
-#### 외부 URL
+- 외부 URL
 
 ~~~html
 <!DOCTYPE html>
@@ -320,7 +320,7 @@ function myFunction(a, b) {
 
 오브젝트는 여러 값들을 넣을 수 있는 변수라고 할 수 있다. 
 
-####  Object
+- Object
 
 ~~~javascript
 var car = "Fiat"; // simple value
@@ -335,18 +335,14 @@ var person = {
 }; // Object에서 value들을 담는 변수 이름들을 property(속성)라고 한다. 
 ~~~
 
-
-
-#### Object property에 접근하는 두가지 방법
+- Object property에 접근하는 두가지 방법
 
 ```javascript
 person.lastName;    // 방법 1
 person["lastName"]; // 방법 2
 ```
 
-
-
-#### Object Methods
+- Object Methods
 
 Object의 속성으로 함수를 포함할 수 있는데 함수 사용시 'this'라는 키워드는 이 함수의 주인, 즉, person object를 의미한다. 따라서 this.firstName이라는 표현은 현재 person object의 firstName 속성을 의미한다.  
 
@@ -660,4 +656,6 @@ document.getElementById("demo").innerHTML = text;
 
 
 
-[W3Schools Source](https://www.w3schools.com/js/js_examples.asp)
+
+
+- [W3Schools Source](https://www.w3schools.com/js/js_examples.asp)
