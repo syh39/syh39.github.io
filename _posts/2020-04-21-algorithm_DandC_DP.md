@@ -1,6 +1,6 @@
 ---
 title:  "Divide-and-conquer 와 Dynamic Programming 비교"
-excerpt: ""
+excerpt: "Divide-and-conquer"
 
 categories:
   - Algorithm
