@@ -172,7 +172,7 @@ document.write(Date());
 
 
 
-**자바스크립트로 HTML content 변경하기 **
+**자바스크립트로 HTML content 변경하기**
 
 > document.getElementById(*id*).innerHTML = *new HTML*
 
@@ -232,7 +232,7 @@ document.getElementById("image").src = "landscape.jpg";
 
 ### DOM CSS
 
-**자바스크립트로 HTML 요소의 스타일을 변경하기 **
+**자바스크립트로 HTML 요소의 스타일을 변경하기**
 
 > document.getElementById(*id*).style.*property* = *new style*
 
@@ -544,7 +544,7 @@ function myThirdFunction() {
 
 
 
-**이벤트핸들러 없애기**
+**이벤트 리스너 없애기**
 
 ~~~html
 <!DOCTYPE html>
@@ -619,7 +619,7 @@ HTML Document의 모든 것들은 Node이다. Document 자체도 노드이고 �
 
 head와 body까지만 보면 이런 그림으로 관계를 나타낼 수 있다. 
 
-![nodes](https://www.w3schools.com/js/pic_navigate.gif)
+<center><img src="https://www.w3schools.com/js/pic_navigate.gif" width="400" ></center>
 
 - 그림을 알 수 있는 사실들은
   - `<html>` 은 루트 노드이다.
