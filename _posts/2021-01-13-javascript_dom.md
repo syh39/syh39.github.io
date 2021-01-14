@@ -6,7 +6,7 @@ categories:
   - Web
 tags:
   - Web
-  - Javascript
+  - DOM
 last_modified_at: 2021-01-13 
 toc: true
 toc_label: "Contents"
@@ -292,13 +292,13 @@ Click Me!</button>
 #container {
   width: 400px;
   height: 400px;
-  position: relative;  <!-- 컨테이너는 relative로 설정 -->
+  position: relative;  /* 컨테이너는 relative로 설정 */
   background: yellow;
 }
 #animate {
   width: 50px;
   height: 50px;
-  position: absolute;   <!-- 컨테이너 안에서 움직이게 될 animate 요소는 absolute로 설정 -->
+  position: absolute;   /* 컨테이너 안에서 움직이게 될 animate 요소는 absolute로 설정 */
   background-color: red;
 }
 </style>
