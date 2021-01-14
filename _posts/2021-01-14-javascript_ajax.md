@@ -1,5 +1,5 @@
 ---
-ㅅtitle:  "AJAX"
+title:  "Javascript AJAX"
 excerpt: "AJAX는 **A**synchronous **J**avaScript **A**nd **X**ML의 약자이다."
 
 categories:
