@@ -518,6 +518,17 @@ function myFunction() {
 
 
 
+### Javascript의 역할 중 가장 중요한 것 
+
+1. DOM 다루는 것
+2. form validation 체크하는 기능 
+3. CSS 동적으로 바꾸는 기능 
+4. AJAX 
+
+이 4가지는 할 줄 알아야 자바스크립트 할 줄 안다고 할 수 있다.  
+
+
+
 - [W3Schools Source](https://www.w3schools.com/js/js_examples.asp)
 
 - [참고 출저](https://gist.github.com/LeoHeo/7c2a2a6dbcf80becaaa1e61e90091e5d)

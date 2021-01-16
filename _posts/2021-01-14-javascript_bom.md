@@ -7,6 +7,7 @@ categories:
 tags:
   - Web
   - BOM
+  - HTML
 last_modified_at: 2021-01-13 
 toc: true
 toc_label: "Contents"
@@ -16,7 +17,7 @@ toc_sticky: true
 
 ### HTML BOM
 
-BOM(Brouser Object Model 의 약자)은 브라우저에 대한 모든 내용을 담고있는 객체로 자바스크립트가 제어할 수 있도록 한 것이다. 브라우저에 관련 된 내용(뒤로가기, 북마크, 즐겨찾기, 히스토리, URL정보 등..) 모두 담고있다. 즉, 브라우저가 가지고 있는 정보를 따로 객체화 시켜서 관리한다. 
+BOM(Brouser Object Model)은 브라우저에 대한 모든 내용을 담고있는 객체로 자바스크립트가 제어할 수 있도록 한 것이다. 브라우저에 관련 된 내용(뒤로가기, 북마크, 즐겨찾기, 히스토리, URL정보 등..) 모두 담고있다. 즉, 브라우저가 가지고 있는 정보를 따로 객체화 시켜서 관리한다. 
 
 
 

@@ -24,6 +24,8 @@ toc_sticky: true
 
 
 
+
+
 ### HTML / CSS / Javascript 의 관계
 
 **HTML** 
@@ -39,12 +41,10 @@ toc_sticky: true
 **Javascript** 
 
 - HTML 문서의 정적이고 단조로운 한계를 극복하기 위하여 Netscape사가 만든 Livescript가 이름이 변경된 것으로 브라우저 자체에서 내장된 해석기능을 이용한 클라이언트 기반의 스크립트 언어이다.
-
 - 콘텐츠를 바꾸고 움직이는 등 페이지를 동적으로 꾸며주는 역할을 하는 프로그래밍 언어이다.
-
 - 웹의 **동적 처리**(HTML 요소의 내용 변경, HTML 요소의 속성 변경, CSS 스타일 변경, HTML 요소 숨기기, HTML 요소 보이기 등)를 담당한다.
 
-  
+
 
 ### Javascript 코드의 위치
 
