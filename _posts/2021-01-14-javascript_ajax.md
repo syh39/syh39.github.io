@@ -24,8 +24,6 @@ AJAX는 **A**synchronous **J**avaScript **A**nd **X**ML의 약자로 자바스�
 
 <center><img src="https://www.w3schools.com/js/pic_ajax.gif"></center>
 
-![Ajax](https://www.w3schools.com/js/pic_ajax.gif)
-
 1. An event occurs in a web page (the page is loaded, a button is clicked)
 2. An XMLHttpRequest object is created by JavaScript
 3. The XMLHttpRequest object sends a request to a web server
