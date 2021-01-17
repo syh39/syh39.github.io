@@ -22,6 +22,8 @@ AJAX는 **A**synchronous **J**avaScript **A**nd **X**ML의 약자로 자바스�
 
 따라서 AJAX는 프로그래밍 언어가 아닌 개념을 의미하게 된다.  AJAX는 `XMLHttpRequest`객체와 자바스크립트 + HTML DOM의 조합을 사용한다. AJAX는 개발자의 이상을 실현시켜준다고 말할 수 있는데 그 이유는 현재 페이지를 새로고침하지 않은 상태로 웹 서버로부터 데이터를 읽어서 현재 페이지에 내용을 띄워주거나 다시 서버로 데이터를 보낼 수 있기 때문이다. AJAX가 실행되는 큰 그림을 보면 다음과 같다. 
 
+<center><img src="https://www.w3schools.com/js/pic_ajax.gif"></center>
+
 ![Ajax](https://www.w3schools.com/js/pic_ajax.gif)
 
 1. An event occurs in a web page (the page is loaded, a button is clicked)
