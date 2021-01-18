@@ -80,6 +80,8 @@ Spring Framework는 자바 플랫폼을 위한 오픈소스 애플리케이션 �
 
 ### Git 연동하기
 
+- 보통 JSP를 사용하여 웹 페이지를 만들 때 여러 사람들과 협업을 하는 경우가 많기 때문에 깃을 사용하게 된다. 
+
 1. Git 계정 로그인 
 2. 저장소 새로 만들기(README 파일같은거 만들면 한번 pull 받아야 해서 귀찮아짐)
 3. STS Window탭 - Show View - Other - git 검색/선택 - open - Clone a git repository - git URL/ID/PW 입 - next - next - Finish / 여기까지 하면 로컬의 깃 폴더와 리모트 깃폴더 연결 완료
