@@ -6,9 +6,12 @@ categories:
   - Web
 tags:
   - Web
-  - jQuery
-  - AJAX
-last_modified_at: 2021-01-17 
+  - Java
+  - Spring
+  - Git
+  - Framework
+  - Tomcat
+last_modified_at: 2021-01-18 
 toc: true
 toc_label: "Contents"
 toc_icon: "cog"
@@ -27,7 +30,7 @@ Spring Framework는 자바 플랫폼을 위한 오픈소스 애플리케이션 �
 
 #### JDK 설치
 
-- **JDK 8 이상**https://www.oracle.com/java/technologies/javase-jdk14-downloads.html
+- **JDK 8 이상**<https://www.oracle.com/java/technologies/javase-jdk14-downloads.html>
   - 자바를 사용하기 위해 JDK를 설치해준다.
   - 설치후 JAVA_HOME 과 path 설정 
   - 설치확인 : java -version
@@ -36,28 +39,28 @@ Spring Framework는 자바 플랫폼을 위한 오픈소스 애플리케이션 �
 
 - STS 내에서 자바 코드를 해석할 수 있는 WAS 서버(웹 서버의 기능도 수행함) / 디플로이 전에 테스트 용도이다. 
 
-- **Tomcat 8.5 이상** https://tomcat.apache.org/download-80.cgi
+- **Tomcat 8.5 이상** <https://tomcat.apache.org/download-80.cgi>
 
 #### STS 설치(Eclipse 해도 된다)
 
 - **Spring Tool Suite 4**
 
-   (or Eclipse for JavaEE) https://spring.io/tools
+   (or Eclipse for JavaEE) <https://spring.io/tools>
 
   - 폰트 크기 변경 / encoding 변경
-    - https://m.blog.naver.com/PostView.nhn?blogId=reinstate10&logNo=220049800243&proxyReferer=https:%2F%2Fwww.google.com%2F
+    - <https://m.blog.naver.com/PostView.nhn?blogId=reinstate10&logNo=220049800243&proxyReferer=https:%2F%2Fwww.google.com%2F>
 
 #### Spring Add-on 설치
 
 - **spring Tools 3 Add-On for Spring Tools 4.3.9.14 Release(Eclipse MarketPlace)**
   - 설치 후 Spring 프레임워크를 이용한 개발을 할 수 있다. 
-- (설치안해도 됨)**Maven3** 이상 http://maven.apache.org/download.cgi
+- (설치안해도 됨)**Maven3** 이상 <http://maven.apache.org/download.cgi>
   - 설치후 path 설정
   - 설치확인 : mvn -version
   - maven은 필요한 라이브러리를 자동으로 관리 + 빌드 관리해준다. gradle이라는 것도 있지만 sts4는 기본적으로 maven 사용한다.
   - STS 4에서는 Maven이 포함되서 설치되기 때문에 별도로 설치할 필요가 없다. 
 - 설치 참고 링크
-  -  https://m.blog.naver.com/PostView.nhn?blogId=rhrkdfus&logNo=221491244470&proxyReferer=https:%2F%2Fwww.google.com%2F
+  -  <https://m.blog.naver.com/PostView.nhn?blogId=rhrkdfus&logNo=221491244470&proxyReferer=https:%2F%2Fwww.google.com%2F>
 
 
 
