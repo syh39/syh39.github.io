@@ -60,41 +60,57 @@ toc_sticky: true
 
 #### 3. Deploy
 
-1. deploy : terminal 작업
+1. deploy는 터미널로 작업한다.
 
-2. heroku plugins:install java[enter]
+2. heroku plugins:install java[enter]  -> heroku에 자바 설치됨
 
 3. mvn package (프로젝트 폴더내에서)
    에러발생시 pom.xml 수정
 
    ~~~xml
-    <plugin>
+    <plugin <plugin됨>
     <artifactId>maven-war-plugin</artifactId>
     <version>2.4</version>
     <configuration>
     <warSourceDirectory>WebContent</warSourceDirectory>
-    <failOnMissingWebXml>false</failOnMissingWebXml>
+    <failOnMissingWebXml>false</failOnMissingWebXml>   <!-- 이 줄 추가 / heroku와 호환됨 -->
     </configuration>
    </plugin>
    ~~~
 
-   수정 후 maven > update project 할것
+   수정 후 maven > update project 할것(pom.xml 파일에 맞춰서 maven 업데이트 됨)
 
-4. sts4에서 배포판 만들기 : Run  as -> maven install -> war 패키지 생성
+   - (가끔 파일 추가나 삭제가 프로젝트에 제대로 반영이 안될 경우 위에 Project -> Clean 해주면 프로젝트가 전체적으로 Refresh 됨)
+   - 여러명이서 협업할 때 버전이 안맞아서 문제가 생기는 경우
+     -  Java Build Path에서 라이브러리 버전들 확인할 것
+     -  Java Build Path - Java Compiler 버전 확인할 것
+     -  Java Build Path - Project Facets 버전들 확인할 것
+
+4. sts4에서 배포판 만들기 : Run  as -> maven install -> war 패키지(배포판) 생성
 
    > 성공 화면
 
    ![20](/assets/images/jsp_project/20.png)
 
-   - 하고 나서 Maven -> Update Project 해줄 것
+   성공하면 target 폴더 내에 war 파일이 생성되는데 만약에 확인이 안되면 프로젝트 refresh 해주면 됨. 
+
+   
+
+   - 배포할 때는 프로젝트를 모두 서버에 올리는 것이 아닌 
+
+     - 프론트엔드 페이지 소스코드들과
+     - Jave Resources-src 아래의 패키지들(자바 클래스 파일들)을 모두 바이트 코드로 변환한 리소스들(소스코드x)과
+     - xml 설정파일들
+
+     을 모아서 압축해서 서버에 올리게 된다. 서버는 그 압축파일을 풀고 서비스를 하게 된다. 
 
 5. 터미널에서 `heroku war:deploy [프로젝트이름]-0.0.1-SNAPSHOT.war --app [heroku 앱 이름]`  입력
-   ([프로젝트]-0.0.1-SNAPSHOT.war는 프로젝트내 target 폴더 에 만들어짐)
+   (target 폴더로 들어가서 [프로젝트]-0.0.1-SNAPSHOT.war 파일 이름 복사하기)
 
    1. 주소실행(heroku에서 앱 열기해도 됨 / `heroku open --app [heroku 앱 이름]`)
 
-   - jdk version 오류로 인해 에러날 때 자바 버전 맞는지 확인하기
-   - 터미널에서 deploy할 때 heroku의 자바 버전 확인할 수 있는데 현재 로컬 프로젝트의 자바 버전(Build Path -> Configure Build Path에서 확인 가능)과 맞는지 확인
+   - 로컬에선 잘 돌아가는데 deploy 이후에 에러가 나는 경우 대부분 JDK(자바 버전)문제이다. 그런 경우 터미널에서 deploy할 때 heroku의 자바 버전 확인할 수 있는데 현재 로컬 프로젝트의 자바 버전(Build Path -> Configure Build Path에서 확인 가능)과 맞는지 확인
+   - 만약에 로컬에서도 에러가 난다면 코드 상의 문제이다. 에러 메세지 유심히 읽어서 디버깅 할 것.
      - `heroku war:deploy [프로젝트이름]-0.0.1-SNAPSHOT.war system.properties --app [heroku 앱 이름]`
      - system.properties
        - java.runtime.version=14
