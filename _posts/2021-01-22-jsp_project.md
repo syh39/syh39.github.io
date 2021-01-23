@@ -21,7 +21,7 @@ toc_sticky: true
 
 웹 서비스를 만든다는 것은 로컬에서 돌아가는 웹 서비스를 만드는 것이 아닌 모든 사람이 접속 할 수 있는 웹 서비스를 만드는 것이다. 따라서 웹 서비스를 인터넷을 통해 다수의 사람들이 접근해서 사용할 수 있도록 해야 한다. 그러기 위해서는 로컬에서 프로젝트 소스 작업을 마친 후에 인터넷 기반의 서버로 프로젝트를 디플로이(Deploy)해야 한다. 인터넷에 서버를 호스팅해주는 여러 사이트가 있는데 여기서는 Heroku라는 인터넷 서버(Paas)를 사용해 볼 것이다. 
 
-#### Heroku 가입 및 세팅
+#### 1. Heroku 가입 및 세팅
 
 1. heroku 가입 : [www.heroku.com/](https://www.heroku.com/)
 
@@ -42,7 +42,7 @@ toc_sticky: true
 
    
 
-#### STS4에서 새 프로젝트 만들기
+#### 2. STS4에서 새 프로젝트 만들기
 
 1. dynamic web project 생성
 
@@ -58,34 +58,37 @@ toc_sticky: true
 
    ![스크린샷 2021-01-23 오후 11.21.58](/assets/images/jsp_project/58.png)
 
-5. deploy : terminal 작업
 
-   - heroku plugins:install java[enter]
 
-   - mvn package (프로젝트 폴더내에서)
-     에러발생시 pom.xml 수정
-      <plugin>
-      <artifactId>maven-war-plugin</artifactId>
-      <version>2.4</version>
-      <configuration>
-      <warSourceDirectory>WebContent</warSourceDirectory>
-      <failOnMissingWebXml>false</failOnMissingWebXml>
-      </configuration>
-     </plugin>
+#### 3. Deploy
 
-     수정 후 maven > update project 할것
+1. deploy : terminal 작업
 
-   - sts4에서 배포판 만들기 : run > maven install -> war 패키지 생성
+2. heroku plugins:install java[enter]
 
-   - heroku war:deploy heroku-0.0.1-SNAPSHOT.war --app second1004
-     heroku-0.0.1-SNAPSHOT.war : 프로젝트 target 에 만들어짐
-     app 이름은 heroku 앱 이름 
+3. mvn package (프로젝트 폴더내에서)
+   에러발생시 pom.xml 수정
+    <plugin>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>2.4</version>
+    <configuration>
+    <warSourceDirectory>WebContent</warSourceDirectory>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+    </configuration>
+   </plugin>
+
+   수정 후 maven > update project 할것
+
+4. sts4에서 배포판 만들기 : run > maven install -> war 패키지 생성
+
+5. heroku war:deploy heroku-0.0.1-SNAPSHOT.war --app second1004
+   heroku-0.0.1-SNAPSHOT.war : 프로젝트 target 에 만들어짐
+   app 이름은 heroku 앱 이름 
 
 6. 주소실행(heroku에서 앱 열기해도 됨)
 
-7. jdk version 오류로 인행 에러날 때
-
-   - heroku war:deploy CRUDProject-0.0.1-SNAPSHOT.war system.properties --app hgu1004
-   - system.properties
-     - java.runtime.version=14
+   - jdk version 오류로 인행 에러날 때
+     - heroku war:deploy CRUDProject-0.0.1-SNAPSHOT.war system.properties --app hgu1004
+     - system.properties
+       - java.runtime.version=14
 
