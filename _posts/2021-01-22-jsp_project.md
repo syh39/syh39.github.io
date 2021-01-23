@@ -48,7 +48,30 @@ toc_sticky: true
 
     [정리 링크](https://syh39.github.io/web/Spring_git/#%EC%83%88-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
-3. index.jsp 생성 및 실행
+3. 소스코드 생성 및 로컬 테스트
+
+   1. DB table 생성
+
+      > 예시
+
+      ~~~sql
+      create table BOARD ( 
+      	seq int AUTO_INCREMENT,
+        title varchar(100),
+        writer varchar(100),
+        content varchar(100),
+        regdate timestamp default current_timestamp, cnt int default 0, 
+        primary key(seq),
+      )
+      ~~~
+
+      
+
+   2. bean 생성
+
+   3. CRUD 파일들 생성 (addform.html / add_ok.jsp / list.jsp / edit...etc)
+
+   4. 로컬 테스트 
 
 4. heroku 사이트에 들어가서 새로운 app생성
 
@@ -60,7 +83,7 @@ toc_sticky: true
 
 #### 3. Deploy
 
-1. deploy는 터미널로 작업한다.
+1. deploy는 터미널로 작업한다(다른 방법도 있긴 하다).
 
 2. heroku plugins:install java[enter]  -> heroku에 자바 설치됨
 
@@ -115,3 +138,6 @@ toc_sticky: true
      - system.properties
        - java.runtime.version=14
 
+#### Github 업로드
+
+Deploy가 성공하면 다른 사람들과의 협업을 위해 깃허브에 업로드한다. 
