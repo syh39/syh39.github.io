@@ -33,12 +33,12 @@ toc_sticky: true
 3. 설치 확인
    heroku --version
 
-   ![스크린샷 2021-01-23 오후 11.17.38](/assets/images/jsp_project/스크린샷 2021-01-23 오후 11.17.38.png)
+   ![스크린샷 2021-01-23 오후 11.17.38](/assets/images/jsp_project/38.png)
 
    heroku login
    \* heroku login > 브라우저에서 로그인 클릭 > 다시 재입력
 
-   <center><img height="400" src="/assets/images/jsp_project/스크린샷 2021-01-23 오후 11.18.59.png"></center>
+   <center><img height="400" src="/assets/images/jsp_project/59.png"></center>
 
    
 
@@ -56,7 +56,7 @@ toc_sticky: true
 
    <https://dashboard.heroku.com/apps>
 
-   ![스크린샷 2021-01-23 오후 11.21.58](/assets/images/jsp_project/스크린샷 2021-01-23 오후 11.21.58.png)
+   ![스크린샷 2021-01-23 오후 11.21.58](/assets/images/jsp_project/58.png)
 
 5. deploy : terminal 작업
 
