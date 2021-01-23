@@ -68,14 +68,14 @@ toc_sticky: true
 
 3. mvn package (프로젝트 폴더내에서)
    에러발생시 pom.xml 수정
-    <plugin>
+    `<plugin>
     <artifactId>maven-war-plugin</artifactId>
     <version>2.4</version>
     <configuration>
     <warSourceDirectory>WebContent</warSourceDirectory>
     <failOnMissingWebXml>false</failOnMissingWebXml>
     </configuration>
-   </plugin>
+   </plugin>`
 
    수정 후 maven > update project 할것
 
@@ -85,14 +85,16 @@ toc_sticky: true
 
    ![20](/assets/images/jsp_project/20.png)
 
-5. heroku war:deploy heroku-0.0.1-SNAPSHOT.war --app second1004
-   heroku-0.0.1-SNAPSHOT.war : 프로젝트 target 에 만들어짐
-   app 이름은 heroku 앱 이름 
+   - 하고 나서 Maven -> Update Project 해줄 것
 
-6. 주소실행(heroku에서 앱 열기해도 됨)
+5. 터미널에서 `heroku war:deploy [프로젝트이름]-0.0.1-SNAPSHOT.war --app [heroku 앱 이름]`  입력
+   ([프로젝트]-0.0.1-SNAPSHOT.war는 프로젝트내 target 폴더 에 만들어짐)
 
-   - jdk version 오류로 인행 에러날 때
-     - heroku war:deploy CRUDProject-0.0.1-SNAPSHOT.war system.properties --app hgu1004
+   1. 주소실행(heroku에서 앱 열기해도 됨 / `heroku open --app [heroku 앱 이름]`)
+
+   - jdk version 오류로 인해 에러날 때 자바 버전 맞는지 확인하기
+   - 터미널에서 deploy할 때 heroku의 자바 버전 확인할 수 있는데 현재 로컬 프로젝트의 자바 버전(Build Path -> Configure Build Path에서 확인 가능)과 맞는지 확인
+     - `heroku war:deploy [프로젝트이름]-0.0.1-SNAPSHOT.war system.properties --app [heroku 앱 이름]`
      - system.properties
        - java.runtime.version=14
 
