@@ -34,9 +34,7 @@ toc_sticky: true
    heroku --version
 
    ![스크린샷 2021-01-23 오후 11.17.38](/assets/images/jsp_project/38.png)
-
-   heroku login
-   \* heroku login > 브라우저에서 로그인 클릭 > 다시 재입력
+   터미널에서 heroku login > 브라우저에서 로그인 클릭 > 다시 재입력
 
    <center><img height="400" src="/assets/images/jsp_project/59.png"></center>
 
@@ -68,14 +66,17 @@ toc_sticky: true
 
 3. mvn package (프로젝트 폴더내에서)
    에러발생시 pom.xml 수정
-    `<plugin>
+
+   ~~~xml
+    <plugin>
     <artifactId>maven-war-plugin</artifactId>
     <version>2.4</version>
     <configuration>
     <warSourceDirectory>WebContent</warSourceDirectory>
     <failOnMissingWebXml>false</failOnMissingWebXml>
     </configuration>
-   </plugin>`
+   </plugin>
+   ~~~
 
    수정 후 maven > update project 할것
 
