@@ -79,7 +79,11 @@ toc_sticky: true
 
    수정 후 maven > update project 할것
 
-4. sts4에서 배포판 만들기 : run > maven install -> war 패키지 생성
+4. sts4에서 배포판 만들기 : Run  as -> maven install -> war 패키지 생성
+
+   > 성공 화면
+
+   ![20](/assets/images/jsp_project/20.png)
 
 5. heroku war:deploy heroku-0.0.1-SNAPSHOT.war --app second1004
    heroku-0.0.1-SNAPSHOT.war : 프로젝트 target 에 만들어짐
