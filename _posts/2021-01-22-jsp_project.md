@@ -1,7 +1,7 @@
 ---
 
 title:  "JSP 프로젝트 호스팅하기"
-excerpt: "" 
+excerpt: "웹 서비스를 만든다는 것은 로컬에서 돌아가는 웹 서비스를 만드는 것이 아닌 모든 사람이 접속 할 수 있는 웹 서비스를 만드는 것이다. " 
 
 categories:
   - Web
@@ -9,6 +9,8 @@ tags:
   - Web
   - Java
   - JSP
+  - PaaS
+  - Server
 
 last_modified_at: 2021-01-22 
 toc: true
@@ -138,6 +140,6 @@ toc_sticky: true
      - system.properties
        - java.runtime.version=14
 
-#### Github 업로드
+#### 4. Github 업로드
 
 Deploy가 성공하면 다른 사람들과의 협업을 위해 깃허브에 업로드한다. 
