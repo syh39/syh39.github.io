@@ -18,13 +18,11 @@ toc_icon: "cog"
 toc_sticky: true
 ---
 
-
-
-### Controller란
+<h3 style="color:navy">Controller란</h3>
 
 Controller는 MVC패턴에서 URL요청을 처리한 후에 지정된 뷰에 모델 객체를 넘겨주는 역할을 하는 뷰와 모델의 인터페이스이다. Controller는 여러가지 파라미터와 리턴 타입을 갖는다. 
 
-#### Controller Method Parameter
+<h4 style="color:#355C8F">Controller Method Parameter</h4>
 
 ##### httpServletRequest.getParameter()
 
@@ -121,9 +119,7 @@ public String test(@ModelAttribute UserDto user) {
 
 
 
-<h4 style="color:blue">Controller Method Return Type</h4>
-
-#### Controller Method Return Type
+<h4 style="color:#355C8F">Controller Method Return Type</h4>
 
 ##### ModelAndView
 
