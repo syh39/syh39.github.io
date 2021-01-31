@@ -18,7 +18,7 @@ toc_icon: "cog"
 toc_sticky: true
 ---
 
-### 
+
 
 ### Controller란
 
@@ -120,6 +120,8 @@ public String test(@ModelAttribute UserDto user) {
 @RequestParam과 비슷한데 1:1로 parameter를 받을 경우엔 @RequestParam을 사용하고 DTO/VO와 같이 객체 전체로 받을 경우 @ModelAttribute로 받을 수 있다. 예를 들어 form에서 데이터를 받을 경우 form name과 DTO/VO의 변수 명을 같게 해줌으로써 자동으로 데이터를 바인딩할 수 있다.
 
 
+
+<h4 style="color:blue">Controller Method Return Type</h4>
 
 #### Controller Method Return Type
 
