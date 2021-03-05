@@ -3,11 +3,9 @@
    ========================================================================== */
 
 // Colors 
-$background-color: #fafeff !default;
-
+$background-color: #fbfcfc !default;
 $text-color: #000 !default;
-
-$primary-color: #3d889b !default;
+$primary-color: #3d719b !default;
 
 /* 
 $border-color: mix(#fff, $background-color, 20%) !default;
@@ -25,10 +23,8 @@ $border-color: mix(#fff, #393e46, 75%) !default;
 */
 
 
-$footer-background-color:  #3d889b/* mix(#000, $background-color, 25%)*/ !default;
-
-
-$link-color: #3d889b !default; // $primary-color !default;
+$footer-background-color:  #3d719b/* mix(#000, $background-color, 25%)*/ !default;
+$link-color: #3d719b !default; // $primary-color !default;
 /*
 $link-color-hover: mix(#fff, $link-color, 25%) !default;
 $link-color-visited: mix(#000, $link-color, 25%) !default;
