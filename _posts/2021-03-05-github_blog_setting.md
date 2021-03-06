@@ -34,7 +34,7 @@ Jekyll이란 HTML(.html), Markdown(.md) 등 다양한 포맷의 텍스트들을 
 
 #### 1. _config.yml 수정
 
-깃허브 페이지의 큰 부분들을 커스터마이징 하는 곳이라고 생각하면 된다. 주석으로 설명이 되어있기 때문에 직관적으로 필요한 부분을 고치면 된다. 
+깃허브 페이지의 큰 부분들을 커스터마이징 하는 곳이라고 생각하면 된다. 주석으로 웬만한건 설명이 되어있기 때문에 직관적으로 필요한 부분을 고치면 된다. 
 
 ~~~yaml
 # Welcome to Jekyll!
@@ -89,252 +89,8 @@ reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : true # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : ######## 비공개 ########  # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
 
-# Header 
-header:
-  image: /assets/images/header-image.jpg
-
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : "/assets/images/profile-image.jpg" # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-# Analytics
-analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : ######## 비공개 ########
-    anonymize_ip         : false # true, false (default)
-
-
-# Site Author
-author:
-  name             : "Yohan Sun" # 왼쪽 상단에 보여질 내 이름
-  avatar           : "/assets/images/profile3.jpg" # 왼쪽 상단에 보여질 프로필 이미지# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Happy Coding :)"  # 왼쪽 상단에 보여질 상태메세지 # - 폴 부르제"  # "컴린이의 좌충우돌 일기메모장<br><br>
-  location         : "Pohang, Korea"  # 왼쪽 상단에 보여질 내 위치
-  email            :
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:syh30@naver.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://syh39.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/syh39"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
-
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/syh39"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 6 # 첫 페이지에 보여줄 최근 게시물 수를 지정
-paginate_path: /page:num/
-timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - https://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      show_date: true
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-
-  # _pages. # 이건 devinlife 보고 붙여넣기 한거
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: false
-      share: true
-      related: false
+... etc ... 
 
 ~~~
 
@@ -362,6 +118,8 @@ $link-color: #3d719b !default; // 링크색(글 제목)
 
 mmistakes는 사용자의 환경에 따른 유동적인 폰트 크기 환경을 지원하기 위해 breakpoint라는 개념을 사용한다.
 
+이 블로그의 경우 폰 화면에서는 14px, 테블릿이나 PC 화면에서는 16px로 보이도록 수정했다. 
+
 ~~~scss
 html {
   /* apply a natural box layout model to all elements */
@@ -388,8 +146,28 @@ html {
 
 
 
+#### 4. 좌우 사이드 비율 수정
+
+/sass/minimal-mistakes/_variables.scss 수정
+
+처음의 default값은 중간에 내용이 들어가는 영역이 너무 좁아서 비효율적으로 느껴져서 내용이 들어가는 영역을 늘리고자 코드를 수정하였다. 이게 왼쪽과 오른쪽이 동시에 수정이 되는 부분이라 화면이 narrow인 경우를 제외하고 각각 30px과 50px만 줄였는데 확 넓어진게 느껴졌다. 게시물 글이 들어가는 부분이 더 넓어지고 왼쪽(프로필 사진과 상태메세지 등)과 오른쪽(목차)의 넓이가 줄어들어서 내용 영역에 더 많은 내용을 넣을 수 있고 내용을 중점적으로 부각시킬 수 있게 되어서 블로그로서의 기능을 더 충실하게 할 수 있게 된 것 같다. 
+
+~~~scss
+$right-sidebar-width-narrow: 200px !default;
+$right-sidebar-width: 270px !default;
+$right-sidebar-width-wide: 350px !default;
+
+// $right-sidebar-width-narrow: 200px !default;
+// $right-sidebar-width: 300px !default;
+// $right-sidebar-width-wide: 400px !default;
+// 원래 코드 - 사이드 여백 너무 많아서 수정
+~~~
+
+
+
 #### 출처
 
+- <https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/>
 - <https://honbabzone.com/jekyll/start-gitHubBlog/>
 - <https://danggai.github.io/categories/#github-io>
 
