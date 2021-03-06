@@ -165,6 +165,39 @@ $right-sidebar-width-wide: 350px !default;
 
 
 
+#### 5. 상단 네비게이션 바 목록 수정
+
+/_data/navigation.yml 이동
+
+목록은 여기서 수정한다. 
+
+~~~yaml
+# main links
+main:
+  - title: "Home"   # 보여지는 이름 
+    url: https://syh39.github.io/ # 이동하는 url
+  - title: "Category"
+    url: /categories/
+  - title: "Tag"
+    url: /tags/
+  - title: "Posts"
+    url: /year-archive/
+    
+
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+~~~
+
+url의 경우 /_pages/ 안에 여러 파일들의 permalink의 값을 넣으면 된다. 
+
+
+
+
+
+
+
 #### 출처
 
 - <https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/>
