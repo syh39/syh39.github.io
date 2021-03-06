@@ -171,6 +171,8 @@ $right-sidebar-width-wide: 350px !default;
 
 목록은 여기서 수정한다. 
 
+url의 경우 /_pages/ 안에 여러 파일들의 permalink의 값을 넣으면 된다. 
+
 ~~~yaml
 # main links
 main:
@@ -190,7 +192,7 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
 ~~~
 
-url의 경우 /_pages/ 안에 여러 파일들의 permalink의 값을 넣으면 된다. 
+
 
 
 
