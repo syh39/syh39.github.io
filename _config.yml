@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "custom" #"default" "contrast", "aqua", "air", "dark"
 locale                   : "en-US"
 title                    : "Divide and Comquer"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Since 2019" # site tagline that appears below site title in masthead
 name                     : "Yohan Sun"
 description              : "An amazing website."
 url                      : "https://syh39.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
