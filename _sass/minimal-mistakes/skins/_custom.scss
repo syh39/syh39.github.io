@@ -99,8 +99,8 @@ $base0f: #cc6633 !default;
 
 // next/previous buttons 
 .pagination--pager {
-  color: $primary-color; // $primary-color; // $text-color;
-  background-color: $text-color;
+  color: #fff; // $primary-color; // $text-color;
+  background-color: $primary-color;
   border-color: transparent; // $border-color; // transparent;
 
   &:visited {
