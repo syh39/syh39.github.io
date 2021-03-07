@@ -209,11 +209,7 @@ font-size: $type-size-3; // 폰트 사이즈 4 -> 5으로 수정(더 작게)
 
 
 
-
-
-
-
-#### 출처
+### 출처
 
 - <https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/>
 - <https://honbabzone.com/jekyll/start-gitHubBlog/>
