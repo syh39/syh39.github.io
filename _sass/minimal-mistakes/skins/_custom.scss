@@ -2,23 +2,6 @@
    Plum skin
    ========================================================================== */
 
-// Colors 
-// $background-color: #fbfeff !default;
-// $text-color: #000 !default;
-// $primary-color: #071c2e !default;
-// $footer-background-color:  #3d719b/* mix(#000, $background-color, 25%)*/ !default;
-// $link-color: #3d719b !default; // $primary-color !default;
-
-
-
-/* 
-$border-color: mix(#fff, $background-color, 20%) !default;
-$code-background-color: mix(#000, $background-color, 15%) !default;
-$code-background-color-dark: mix(#000, $background-color, 20%) !default;
-$form-background-color: mix(#000, $background-color, 15%) !default;
-*/
-
-// $text-color: #252533 !default;
 
 /*
 $muted-text-color: #37375c !default;
@@ -107,10 +90,6 @@ $base0f: #cc6633 !default;
   }
 }
 
-.ais-search-box .ais-search-box--input {
-  background-color: $form-background-color;
-}
-
 */ 
 
 // next/previous buttons 
@@ -123,6 +102,10 @@ $base0f: #cc6633 !default;
     color: $text-color;
   }
 }
+
+// .ais-search-box .ais-search-box--input {
+//   background-color: $form-background-color;
+// }
 
 
 
