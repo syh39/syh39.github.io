@@ -105,7 +105,7 @@ _default.scss 기반으로 추가된 부분은 아래와 같다. 참고로 _defa
 ~~~scss
 $background-color: #fbfcfc !default; // 배경색 
 $text-color: #000 !default; // 폰트색
-$primary-color: #3d719b !default; // 주 컨셉 색깔(상단 메뉴바의 밑줄)
+$primary-color: #3d719b !default; // 주 컨셉 색깔(상단 메뉴바의 밑줄, 목차 등)
 $footer-background-color:  #3d719b/* mix(#000, $background-color, 25%)*/ !default; // footer 색
 $link-color: #3d719b !default; // 링크색(글 제목)
 ~~~
@@ -190,6 +190,19 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
+~~~
+
+
+
+#### 6. 상단 네비게이션 바 디자인 수정
+
+/_sass/minimal-mistakes/_masthead.scss 수정
+
+상단 네비게이션 바의 글씨 굵기, 크기, 여백 등을 수정할 수 있다. 
+
+~~~scss
+font-size: $type-size-3; // 폰트 사이즈 4 -> 5으로 수정(더 작게)
+// font-weight: bold;    // 폰트 굵기 굵게 -> 평범하게로 수정
 ~~~
 
 
