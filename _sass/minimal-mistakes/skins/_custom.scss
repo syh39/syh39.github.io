@@ -39,7 +39,7 @@ $primary-color: #3d719b; // #3d719b !default;
 // $form-background-color: mix(#000, $background-color, 15%) !default;
 $footer-background-color: #3d719b/* mix(#000, $background-color, 25%)*/ !default;
 $link-color: #3d719b !default; // $primary-color !default;
-$link-color-hover: mix(rgb(29, 29, 29), $link-color, 25%) !default;
+$link-color-hover: mix(rgb(41, 42, 49), $link-color, 25%) !default;
 $link-color-visited: mix(#000, $link-color, 40%) !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
