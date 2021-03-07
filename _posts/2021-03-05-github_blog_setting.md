@@ -207,6 +207,42 @@ font-size: $type-size-3; // 폰트 사이즈 4 -> 5으로 수정(더 작게)
 
 
 
+#### 7. 프로필사진 디자인 수정
+
+/_sass/minimal-mistakes/sidebar.scss 수정
+
+상단 네비게이션 바의 글씨 굵기, 크기, 여백 등을 수정할 수 있다. 
+
+~~~scss
+.author__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 30px;// 36px;   / 프로필사진 넓이
+  height: 30px;// 36px;  / 프로필사진 높이
+
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    // max-width: 110px;
+    max-width: 150px;
+    border-radius: 30%;  // 50%인 경우 원이 된고 0%인 경우 사각형이 된다
+
+    @include breakpoint($large) {
+      // padding: 5px;
+      // border: 1px solid $border-color;
+      padding: 3px;                     // border 와의 거리 
+      border: 2px solid $border-color;  // border 속성
+    }
+  }
+}
+~~~
+
+
+
 
 
 ### 출처
