@@ -16,7 +16,7 @@ toc_sticky: true
 
 ### Git Blog란
 
-깃 블로그는 Github 저장소에 저장된 html 파일과 같은 정적 웹 문서들을 GitHub에서 무료로 웹에서 볼 수 있도록 호스팅 서비스를 제공해 주는 블로그이다. Github 계정을 갖고 있는 사용자들은 누구나 자신만의 정적 웹 사이트 1개를 가질 수 있다. 저장소명은 `{Git ID}.github.com` 으로 세팅하면 된다. 그렇게 저장소를 만들면 자동으로 `Github Pages` 가 생성되게 된다. 
+깃 블로그는 Github 저장소에 저장된 html 파일과 같은 정적 웹 문서들을 GitHub에서 무료로 웹에서 볼 수 있도록 호스팅 서비스를 제공해 주는 블로그이다. Github 계정을 갖고 있는 사용자들은 누구나 자신만의 정적 웹 사이트 1개를 가질 수 있다. 저장소명은 `{Git ID}.github.com` 으로 세팅하면 된다. 그렇게 저장소를 만들면 자동으로 `Github Pages` 가 생성되게 된다.  
 
 
 
@@ -211,7 +211,7 @@ font-size: $type-size-3; // 폰트 사이즈 4 -> 5으로 수정(더 작게)
 
 /_sass/minimal-mistakes/sidebar.scss 수정
 
-상단 네비게이션 바의 글씨 굵기, 크기, 여백 등을 수정할 수 있다. 
+프로필사진의 CSS를 수정할 수 있다. 
 
 ~~~scss
 .author__avatar {
