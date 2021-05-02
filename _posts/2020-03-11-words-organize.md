@@ -51,4 +51,4 @@ toc_sticky: true
 
 **Component:** 자동차를 하나 만들 때, 바퀴, 거울, 핸들, 엔진 등 각각의 부분을 Component화 해서 하나의 완성된 자동차를 만든다. 이것이 Component Base Development이다. 그래서 특정 부분이 고장나면 그 부분만 고치면 된다.
 
- 
+   
