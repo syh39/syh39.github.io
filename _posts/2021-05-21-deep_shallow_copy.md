@@ -208,7 +208,7 @@ Deep Copy의 메모리상의 결과는 다음과 같다.
 
 ### 출처
 
-- https://jackjeong.tistory.com/100
+- <https://jackjeong.tistory.com/100>
 
 
 
