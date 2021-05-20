@@ -144,6 +144,8 @@ public class PrototypeTest {
 
 ![image](https://user-images.githubusercontent.com/54565079/119048917-dc110e80-b9fa-11eb-943d-3e2a33987e69.png)
 
+![image](https://user-images.githubusercontent.com/54565079/119050778-4925a380-b9fd-11eb-815b-62dc72a782df.png)
+
 clone()메서드를 구현한 클래스를 추상 클래스로 만들어서 subclass(PrototypeImpl)에서 구체적으로 자잘한 메서드를 구현할 수 있도록 할 수 있다. 이때 추상클래스를 원형(Prototype), 추상클래스를 구현하는 클래스를 구체적인 원형(Concrete Prototype), 그리고 구체적인 원형에 정의된 메서드를 이용해 새로운 객체를 생성하는 곳을 이용자(Client)라고 한다. clone() 메서드는 원형 타입의 객체를 clone하는 객체가 기존의 객체를 clone하도록 (원형타입)super.clone()로 구현해주면 된다. 
 
 프로토타입 패턴과 비교되는 패턴은 싱글톤 패턴인데 무조건 하나의(같은) 객체만 리턴해주는 방식이다. 
