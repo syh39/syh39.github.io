@@ -1,7 +1,7 @@
 ---
 
 title: "Prototype Pattern"
-excerpt: "코드를 짤 때 객체를 복사를 해야하는 경우가 자주 생기는데 이때 복사를 하는 방식에는 Shallow Copy와 Deep Copy 두가지 방식이 있다." 
+excerpt: "프로토타입 패턴은 객체를 생성하는게 비용이 많이 들고 이미 유사한 객체가 존재하는 경우에(더 나아가 기존의 객체와 거의 유사한 객체를 만들고자 할 때) 사용하는 패턴이다." 
 
 categories:
   - OODP
