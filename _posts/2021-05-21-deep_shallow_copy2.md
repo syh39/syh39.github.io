@@ -14,7 +14,7 @@ toc_icon: "cog"
 toc_sticky: true
 ---
 
-### Shallow Copy vs Deep Copy 1
+### Shallow Copy vs Deep Copy
 
 코드를 짤 때 객체를 복사를 해야하는 경우가 자주 생기는데 이때 복사를 하는 방식에는 Shallow Copy와 Deep Copy 두가지 방식이 있다. 둘의 차이를 요약하자면 Shallow Copy는 주소값을 복사하는 방식이고 Deep Copy는 새로운 메모리 공간에 값을 복사하는 방식이다. 코드상으로는 다음과 같다. 
 
@@ -142,6 +142,7 @@ public class Main {
 **3. Clonable Interface를 구현하여 clone() 재 정의**
 
 ```java
+
 public class YohanCoding2 implements Cloneable {
 	String name;
 	long money;
