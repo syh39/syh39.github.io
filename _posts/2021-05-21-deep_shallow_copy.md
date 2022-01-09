@@ -1,6 +1,6 @@
 ---
 
-title: "Shallow Copy vs Deep Copy"
+title: "Shallow Copy vs Deep Copy;"
 excerpt: "코드를 짤 때 객체를 복사를 해야하는 경우가 자주 생기는데 이때 복사를 하는 방식에는 Shallow Copy와 Deep Copy 두가지 방식이 있다." 
 
 categories:
