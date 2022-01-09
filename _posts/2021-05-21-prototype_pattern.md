@@ -1,6 +1,6 @@
 ---
 
-title: "Prototype Pattern;"
+title: "Prototype Pattern"
 excerpt: "프로토타입 패턴은 객체를 생성하는게 비용이 많이 들고 이미 유사한 객체가 존재하는 경우에(더 나아가 기존의 객체와 거의 유사한 객체를 만들고자 할 때) 사용하는 패턴이다." 
 
 categories:
