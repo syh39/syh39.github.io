@@ -1,6 +1,6 @@
 ---
 
-title: "Spring Controller Method"
+title: "Spring Controller Method4"
 excerpt: "Controller는 MVC패턴에서 URL요청을 처리한 후에 지정된 뷰에 모델 객체를 넘겨주는 역할을 하는 뷰와 모델의 인터페이스이다." 
 
 categories:
