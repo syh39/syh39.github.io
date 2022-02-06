@@ -1,5 +1,5 @@
 ---
-title: "Cmd에서 git add, commit, push 한번에 하기"
+title: "Git add, commit, push 한번에 하기"
 excerpt: "블로그 게시물을 쓸 때 보통 Typora로 게시물을 쓰고 깃허브 저장소로 올릴 때는 위 3가지 명령어로 올리는데 매번 쓰다보니 3가지 명령어를 차례대로 쓰는게 귀찮아서 한번에 올리는 방법이 없을까 생각하다가 방법을 찾았다. "
 
 categories:
