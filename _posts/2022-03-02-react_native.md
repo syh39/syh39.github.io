@@ -1,11 +1,11 @@
 ---
-title:  "React Native 개념 정리"
-excerpt: "React Native란"
+title:  "React 개념 정리"
+excerpt: "React란"
 
 categories:
   - Web
 tags:
-  - React Native
+  - React
   - Front-end
   - Javascript
   - jQuery
@@ -21,12 +21,12 @@ toc_sticky: true
 ---
 
 
-### React Native 개념 정리
+### React개념 정리
 
-#### React Native 란
+#### React란
 
 - 프론트엔드 프레임워크 중 하나
-  - ex) React native, angular, vue.js.. etc
+  - ex) React, angular, vue.js.. etc
   - 프론트엔드 프레임워크 중 가장 인기 있음
   - 페이스북 개발, 드롭박스, MS, 우버, 에어비엔비 등 대형 기업 채택
   - 공개 소프트웨어
