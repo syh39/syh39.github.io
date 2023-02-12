@@ -28,9 +28,9 @@ toc_sticky: true
 
 `git config --global alias.cmp '!f() { git add -A && git commit -m "$@" && git push; }; f'`
 
-명령어로 .gitconfig 파일에 alias를 추가해주면 된다.
+명령어를 통해 자동으로 .gitconfig 파일에 alias를 추가해주면 된다.
 
-이렇게 하면 `git cmp 'commit message'` 이 한줄로 위의 3줄과 동일한 명령어를 실행할 수 있게 된다. 
+이렇게 하면 alias에 등록한 `cmp ` 옵션을 통해 `git cmp 'commit message'` 이 한줄로 위의 3줄과 동일한 명령어를 실행할 수 있게 된다. 
 
 
 
