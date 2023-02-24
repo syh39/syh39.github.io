@@ -64,11 +64,11 @@ toc_sticky: true
 
 ### 출처
 
-- https://cheershennah.tistory.com/54
-- https://kchanguk.tistory.com/2
-- https://jaehoney.tistory.com/38
-- https://melonicedlatte.com/2020/07/08/231200.html
-- https://velog.io/@kdhyo/Apache-Tomcat-%EB%91%98%EC%9D%B4-%EB%AC%B4%EC%8A%A8-%EC%B0%A8%EC%9D%B4%EC%A7%80
-- https://velog.io/@welchs1423/%EC%95%84%ED%8C%8C%EC%B9%98-%ED%86%B0%EC%BA%A3
-- https://hoon-k.tistory.com/5
+- <https://cheershennah.tistory.com/54>
+- <https://kchanguk.tistory.com/2>
+- <https://jaehoney.tistory.com/38>
+- <https://melonicedlatte.com/2020/07/08/231200.html>
+- <https://velog.io/@kdhyo/Apache-Tomcat-%EB%91%98%EC%9D%B4-%EB%AC%B4%EC%8A%A8-%EC%B0%A8%EC%9D%B4%EC%A7%80>
+- <https://velog.io/@welchs1423/%EC%95%84%ED%8C%8C%EC%B9%98-%ED%86%B0%EC%BA%A3>
+- <https://hoon-k.tistory.com/5>
 
