@@ -64,7 +64,6 @@ toc_sticky: true
 
 ### 출처
 
-- <https://www.youtube.com/watch?v=CoFLunStYdU>
 - https://cheershennah.tistory.com/54
 - https://kchanguk.tistory.com/2
 - https://jaehoney.tistory.com/38
