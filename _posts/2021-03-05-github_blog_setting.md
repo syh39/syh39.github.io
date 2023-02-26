@@ -243,6 +243,10 @@ font-size: $type-size-3; // 폰트 사이즈 4 -> 5으로 수정(더 작게)
 
 
 
+#### 8. 파비콘 수정하기 
+
+- [참고링크](https://danggai.github.io/github.io/Github.io-%ED%8C%8C%EB%B9%84%EC%BD%98-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0/)
+
 
 
 ### 출처
