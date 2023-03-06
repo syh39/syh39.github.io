@@ -243,7 +243,7 @@ if(employee.isEligibleForFullBenefits()) ... // 좋은 코드 (주석이 필요 
   - 프로그래머가 주석을 보고 실수를 면하게 할 수 있다.
 - TODO 주석
   - 필요하지만 당장 구현하기 어려운 경우 앞으로 할 일을 남겨놓으면 편하다. 요즘 IDE는 TODO를 전부 찾아주는 기능을 제공하기 때문에 찾기도 쉽다. 하지만 TODO 주석 역시도 주기적으로 점검해서 없애도 괜찮으면 없애주는게 좋다. 
-- 공개 API를 구현할때는 Javadocs를 열심히 작성해야 한다. 
+- 공개 API를 구현할때는 Javadocs를 열심히 작성해야 한다. 공개 API가 아닌 경우에는 Javadocs 주석이 요구하는 형식으로 인해 코드만 보기 싫고 산만해진다. 
 
 
 
@@ -282,6 +282,26 @@ if(employee.isEligibleForFullBenefits()) ... // 좋은 코드 (주석이 필요 
   - 중첩이 심하고 장황한 함수라면 의미가 있을 수 있지만 중첩이 심하고 장황한 함수가 아닌 작고 캡슐화된 함수를 만드는게 더 좋다. 
 
 - 공로를 돌리거나 저자를 추가하는 주석
+
+  - 소스코드 관리 시스템이 있는 현재 시점에서 이런 주석은 점차 부정확하고 쓸모없는 정보로 변하기 쉽다. 
+
+- 주석으로 처리한 코드
+
+  ```java
+  InputStreamResponse response = new InputStreamResponse();
+  response.setBody(formatter.getResultStream(), formatter.getByteCount());
+  // InputStream resultsStream = formatter.getResultStream();
+  // StreamReader reader = new StreamReader(resultStream);
+  // response.setContent(reader.read(formatter.getByteCount()));
+  ```
+
+  주석으로 처리된 코드는 다른 사람이 봤을 때 이유가 있어서 남겨 놓았을 거라고 생각하기 때문에 지우기 어렵다. 1960년대에는 주석으로 처리한 코드가 유용했지만 요즘은 소스코드 관리 시스템이 있기 때문에 코드를 삭제하는게 낫다. 
+
+
+- 너무 많은 정보
+  - 주석에 역사적인 일이나 관련 없는 정보를 장황하게 늘어놓는건 안좋다. 
+- 주석과 코드의 모호한 관계
+  - 주석을 달아야 한다면 코드를 명확하게 설명하는 주석을 달아야 한다. 
 
 
 
